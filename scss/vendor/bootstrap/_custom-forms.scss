@@ -15,7 +15,7 @@
 
   &:focus {
     border-color: #000;
-    box-shadow: $cassiopeia-input-focus-shadow;
+    box-shadow: $garibaldi-input-focus-shadow;
   }
 
   [dir=rtl] & {
@@ -34,7 +34,7 @@
 
       &:checked {
         color: $white;
-        background-color: var(--cassiopeia-color-primary) !important;
+        background-color: var(--garibaldi-color-primary) !important;
       }
     }
   }

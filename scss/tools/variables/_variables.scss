@@ -1,11 +1,16 @@
 // Global
-$cassiopeia-container-main-bg:        hsl(0, 0%, 95%) !default;
-$cassiopeia-border-color:             hsl(210, 14%, 89%) !default;
-$cassiopeia-box-shadow:               1px 1px 4px hsla(0, 0%, 0%, .1) !default;
-$cassiopeia-block-header-bg:          hsl(0, 0%, 96%) !default;
-$cassiopeia-header-grad:              linear-gradient(135deg, var(--cassiopeia-color-primary) 0%, var(--cassiopeia-color-hover) 100%);
-$cassiopeia-header-grad-rtl:          linear-gradient(135deg, var(--cassiopeia-color-hover) 0%, var(--cassiopeia-color-primary) 100%);
-$cassiopeia-inverted-text-color:      var(--cassiopeia-color-hover);
+$gari-wall-colour: #deccb4;
+// $body-background: lighten($root-background, 5%);
+$gari-woodwork-colour: #938c6f;
+
+$garibaldi-container-main-bg:        hsl(0, 0%, 95%) !default;
+$garibaldi-border-color:             hsl(210, 14%, 89%) !default;
+$garibaldi-box-shadow:               1px 1px 4px hsla(0, 0%, 0%, .1) !default;
+$garibaldi-block-header-bg:          #001 !default;
+$garibaldi-block-header-alt:         #051020 !default;
+$garibaldi-header-grad:              linear-gradient(135deg, $garibaldi-block-header-bg 0%, $garibaldi-block-header-alt 100%);
+$garibaldi-header-grad-rtl:          linear-gradient(135deg, $garibaldi-block-header-alt 0%, $garibaldi-block-header-bg 100%);
+$garibaldi-inverted-text-color:      var(--garibaldi-color-hover);
 
 // Remove prefix added in BS5 for compat with Joomla beta's shipped with Betas
 $variable-prefix:                     "";
@@ -13,9 +18,9 @@ $variable-prefix:                     "";
 // Color system
 
 // Standard
-$standard-color-primary:              hsl(220, 67%, 20%);
-$standard-color-link:                 hsl(220, 67%, 40%);
-$standard-color-hover:                hsl(242, 30%, 36%);
+$standard-color-primary:              #222;
+$standard-color-link:                 $gari-woodwork-colour;
+$standard-color-hover:                $gari-wall-colour;
 
 // Alternative
 $alternative-color-primary:           hsl(351, 54%, 37%);
@@ -71,7 +76,7 @@ $colors: (
   "white":                            $white
 );
 
-$primary:                             var(--cassiopeia-color-primary);
+$primary:                             var(--garibaldi-color-primary);
 $primaryBS:                           $blue;
 $secondary:                           $gray-600;
 $success:                             $green;
@@ -136,15 +141,15 @@ $colors: (
 );
 
 // Links
-$link-color:                          var(--cassiopeia-color-link);
-$link-hover-color:                    var(--cassiopeia-color-hover);
+$link-color:                          var(--garibaldi-color-link);
+$link-hover-color:                    var(--garibaldi-color-hover);
 
 // Breadcrumbs
 $breadcrumb-active-color:             $gray-700;
 
 // Grid columns
 $grid-gutter-width:                   1em !default;
-$cassiopeia-grid-gutter:              $grid-gutter-width;
+$garibaldi-grid-gutter:              $grid-gutter-width;
 
 // Components
 $fa-font-path:                        "../../../media/vendor/fontawesome-free/webfonts";
@@ -156,11 +161,12 @@ $treeselect-line-height:              2.2rem;
 $metismenu:                           true !default;
 
 // Toolbar
-$cassiopeia-toolbar-line-height:      1.8rem;
+$garibaldi-toolbar-line-height:      1.8rem;
 
 // Typography
 $font-family-sans-serif:             -apple-system, BlinkMacSystemFont, "Segoe UI", Roboto, "Helvetica Neue", Arial, "Noto Sans", sans-serif, "Apple Color Emoji", "Segoe UI Emoji", "Segoe UI Symbol", "Noto Color Emoji" !default;
-$font-family-base:                    var(--cassiopeia-font-family-body, $font-family-sans-serif);
+$font-family-serif:                   "Playfair Display", serif;
+$font-family-base:                    var(--garibaldi-font-family-body, $font-family-sans-serif);
 
 // Icons
 $jicon-css-prefix:                    icon !default;
@@ -190,7 +196,7 @@ $input-btn-padding-x:                 1rem;
 $input-max-width:                     100%;
 $input-focus-border-color:            tint-color($standard-color-primary, 50%);
 
-$cassiopeia-input-focus-shadow:       0 0 0 .2rem hsla(0, 0%, 0%, .1);
+$garibaldi-input-focus-shadow:       0 0 0 .2rem hsla(0, 0%, 0%, .1);
 
 $form-select-indicator-padding:     3rem;
 $form-select-bg:                    $gray-200;
@@ -225,20 +231,20 @@ $zindex-mobile-menu:                  9000;
 $nav-link-padding-y:                  .5rem;
 
 // Navs
-$cassiopeia-tabs-header-bg:           $cassiopeia-block-header-bg;
-$cassiopeia-tabs-active-bg:           hsla(0, 0%, 0%, .3);
-$cassiopeia-tabs-active-highlight:    $primaryBS;
+$garibaldi-tabs-header-bg:           $garibaldi-block-header-bg;
+$garibaldi-tabs-active-bg:           hsla(0, 0%, 0%, .3);
+$garibaldi-tabs-active-highlight:    $primaryBS;
 
 // Navbar
 $nav-link-height:                     1.5rem + $nav-link-padding-y * 2;
 
 // Cards
-$cassiopeia-card-title-bg:            $cassiopeia-block-header-bg;
-$cassiopeia-card-title-icon-bg:       $cassiopeia-block-header-bg;
-$cassiopeia-card-title-icon-bg-hover: scale-color($cassiopeia-card-title-bg, $lightness: 2%);
+$garibaldi-card-title-bg:            $garibaldi-block-header-bg;
+$garibaldi-card-title-icon-bg:       $garibaldi-block-header-bg;
+$garibaldi-card-title-icon-bg-hover: scale-color($garibaldi-card-title-bg, $lightness: 2%);
 $card-bg-color-light:                 $gray-100;
-$card-bg-color-dark:                  var(--cassiopeia-color-primary);
-$card-border-color:                   $cassiopeia-border-color;
+$card-bg-color-dark:                  var(--garibaldi-color-primary);
+$card-border-color:                   $garibaldi-border-color;
 
 // Badges
 $badge-default-bg:                    $gray-600;

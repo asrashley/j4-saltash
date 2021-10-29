@@ -1,10 +1,10 @@
 // Fonts
 $roboto-font-path: "../../../../media/vendor/roboto-fontface/fonts" !default;
-@import "../../../../media/vendor/roboto-fontface/scss/roboto/sass/roboto-fontface";
+@import "../vendor/roboto/roboto-fontface";
 
 :root {
-  --cassiopeia-font-family-body: "Roboto", sans-serif;
-  --cassiopeia-font-family-headings: "Roboto", sans-serif;
-  --cassiopeia-font-weight-headings: 700;
-  --cassiopeia-font-weight-normal: 400;
+  --garibaldi-font-family-body: "Roboto", sans-serif;
+  --garibaldi-font-family-headings: "Roboto", sans-serif;
+  --garibaldi-font-weight-headings: 700;
+  --garibaldi-font-weight-normal: 400;
 }

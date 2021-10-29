@@ -3,11 +3,11 @@
 .nav.nav-tabs {
   padding: 0;
   margin: 0;
-  background-color: $cassiopeia-tabs-header-bg;
-  border: 1px solid $cassiopeia-border-color;
+  background-color: $garibaldi-tabs-header-bg;
+  border: 1px solid $garibaldi-border-color;
   border-bottom: 0;
   border-radius: $border-radius $border-radius 0 0;
-  box-shadow: 0 1px $white inset, 0 2px 3px -3px hsla(0, 0%, 0%, .15), 0 -4px 0 hsla(0, 0%, 0%, .05) inset, $cassiopeia-box-shadow;
+  box-shadow: 0 1px $white inset, 0 2px 3px -3px hsla(0, 0%, 0%, .15), 0 -4px 0 hsla(0, 0%, 0%, .05) inset, $garibaldi-box-shadow;
 
   .nav-item {
     margin-bottom: 0;
@@ -36,14 +36,14 @@
   .nav-link {
     position: relative;
     padding: .75em 1em;
-    color: var(--cassiopeia-color-primary);
+    color: var(--garibaldi-color-primary);
     border: 0;
     border-top-left-radius: 0;
     border-top-right-radius: 0;
     box-shadow: -1px 0 0 hsla(0, 0%, 0%, .05);
 
     &.active {
-      background-color: $cassiopeia-tabs-active-bg;
+      background-color: $garibaldi-tabs-active-bg;
       background-image: linear-gradient(to bottom, hsla(0, 0%, 0%,0), hsla(0, 0%, 0%, .05) 100%);
       border-right: 0;
       border-left: 0;
@@ -58,7 +58,7 @@
         left: 0;
         height: 5px;
         content: "";
-        background-color: $cassiopeia-tabs-active-highlight;
+        background-color: $garibaldi-tabs-active-highlight;
         opacity: .8;
       }
 
@@ -72,7 +72,7 @@
   padding: 15px;
   background: $white;
   border: 1px solid;
-  border-color: $cassiopeia-border-color;
+  border-color: $garibaldi-border-color;
   border-radius: 0 0 $border-radius $border-radius;
-  box-shadow: $cassiopeia-box-shadow;
+  box-shadow: $garibaldi-box-shadow;
 }

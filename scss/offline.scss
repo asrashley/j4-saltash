@@ -1,5 +1,5 @@
 // Bootstrap functions
-@import "../../../media/vendor/bootstrap/scss/functions";
+@import "vendor/bootstrap/functions";
 
 // Variables, Functions and Mixins
 @import "tools/tools";
@@ -28,16 +28,16 @@
 
 .header {
   position: relative;
-  padding: $cassiopeia-grid-gutter ($cassiopeia-grid-gutter*2);
+  padding: $garibaldi-grid-gutter ($garibaldi-grid-gutter*2);
   margin: 0;
   color: $white;
   text-align: center;
-  background-color: var(--cassiopeia-color-primary);
-  background-image: $cassiopeia-header-grad;
+  background-color: var(--garibaldi-color-primary);
+  background-image: $garibaldi-header-grad;
   border-radius: 5px 5px 0 0;
 
   [dir=rtl] & {
-    background-image: $cassiopeia-header-grad-rtl;
+    background-image: $garibaldi-header-grad-rtl;
   }
 }
 

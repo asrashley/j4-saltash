@@ -30,7 +30,7 @@
         display: flex;
         flex-wrap: wrap;
         align-items: center;
-        padding: ($cassiopeia-grid-gutter/2) $cassiopeia-grid-gutter;
+        padding: ($garibaldi-grid-gutter/2) $garibaldi-grid-gutter;
         font-size: 1.1rem;
         line-height: 1.5;
 
@@ -111,7 +111,7 @@
       .mm-collapse {
         position: absolute;
         background-color: hsl(0, 0%, 100%);
-        box-shadow: $cassiopeia-box-shadow;
+        box-shadow: $garibaldi-box-shadow;
 
         &:not(.mm-show) {
           display: none;
@@ -137,9 +137,9 @@
           > ul {
             position: relative;
             top: 0;
-            flex-basis: calc(100% + #{$cassiopeia-grid-gutter});
-            margin-top: ($cassiopeia-grid-gutter/2);
-            margin-bottom: ($cassiopeia-grid-gutter/-2);
+            flex-basis: calc(100% + #{$garibaldi-grid-gutter});
+            margin-top: ($garibaldi-grid-gutter/2);
+            margin-bottom: ($garibaldi-grid-gutter/-2);
             background-color: hsla(0, 0%, 0%, .03);
             box-shadow: none;
           }
