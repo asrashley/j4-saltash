@@ -1,3 +1,12 @@
+.newsflash .contact-details  {
+  margin-top: 1em; 
+}
+
+.newsflash .contact-details > p {
+  margin-bottom: 0;
+}
+
+
 @media all and (min-width: 600px) {
   .container-component {
     width: 90% !important;
@@ -263,160 +272,6 @@ a:not([class]) {
   content: "\f30d";
 }
 
-/*!
-* Services styling
-*/
-
-.therapies_title {
-  font-family: "Lora", serif;
-  text-align: center;
-  padding-bottom: 48px;
-  color: #816170;
-}
-
-.therapies_wrapper {
-  padding: 48px 0 48px 0;
-  width: 100vw;
-  background-color: #f7edef;
-}
-
-.therapies_flex {
-  display: flex;
-  flex-direction: row;
-  flex-wrap: wrap;
-  /* flex-flow: column nowrap; */
-  text-align: center;
-  justify-content: space-around;
-  align-items: center;
-  align-content: center;
-}
-
-.therapies_item {
-  position: relative;
-  width: 250px;
-  font-size: larger;
-  text-align: center;
-  transition: all 0.7s ease-out;
-}
-
-.therapies_item:hover {
-  color: #816170;
-}
-
-.therapies_item:hover .therapies_image {
-  width: 250px;
-  transform: scale(1.2) rotate(2deg);
-}
-
-.therapies_image {
-  padding-bottom: 32px;
-  transition: all 0.7s ease-out;
-  width: 250px;
-}
-
-.therapies_text {
-  font-family: "Montserrat", sans-serif;
-  position: absolute;
-  top: 150px;
-  margin-left: -75px;
-  width: 150px;
-  color: transparent;
-  background-color: transparent;
-  border-color: transparent;
-  border-radius: 8px;
-  border-style: solid;
-  transform: scale(1.5);
-}
-
-.therapies_item:hover .therapies_text {
-  color: #231a1e;
-  background-color: rgba(203, 124, 149, 0.4);
-  border-color: rgba(203, 124, 149, 0.4);
-  border-radius: 8px;
-  transition: all 0.7s 0.3s ease-out;
-}
-
-@media all and (max-width: 780px) {
-  .therapies_item .therapies_text {
-    top: 250px;
-    color: #231a1e;
-    background-color: rgba(203, 124, 149, 0.4);
-    border-color: rgba(203, 124, 149, 0.4);
-    border-radius: 8px;
-    transition: all 0.7s 0.3s ease-out;
-  }
-}
-@media all and (max-width: 780px) {
-  .therapies_flex {
-    justify-content: center;
-  }
-}
-/*!
- * Videos Flexbox addition
- */
-
-.videos_wrapper {
-  padding: 48px 0 48px 0;
-}
-
-.videos_flex {
-  display: flex;
-  flex-direction: row;
-  flex-wrap: wrap;
-  /* flex-flow: column nowrap; */
-  text-align: center;
-  justify-content: space-around;
-}
-
-.videos_item {
-  position: relative;
-  width: 16rem;
-  text-align: center;
-  transition: all 0.7s ease-out;
-}
-.videos_card {
-  background-color: #f7edef;
-  margin: 8px;
-  box-shadow: 0 0 4px 0 rgba(0, 0, 0, 0.3);
-}
-.videos_card-title {
-  border: 1px solid #816170;
-  border-radius: 4px 4px 0 0;
-  background-color: #816170;
-  color: #f7edef;
-  padding: 8px 8px;
-  text-transform: uppercase;
-}
-.videos_img {
-  width: 14rem;
-  border-radius: 4px 4px 0 0;
-  color: #f7edef;
-  padding: 8px 8px;
-}
-.videos_btn {
-  background-color: #816170;
-  border: #816170 solid 1px;
-  border-radius: 4px;
-  padding: 4px 8px;
-  color: #eed3d4;
-  margin-bottom: 8px;
-}
-.videos_btn:hover {
-  background-color: #eed3d4;
-  color: #46353d;
-  cursor: pointer;
-}
-.videos_card-subtitle {
-  background-color: #eed3d4;
-  color: #46353d;
-  padding: 8px;
-}
-.videos_list {
-  border: 1px solid #f7edef;
-  border-radius: 0 0 4px 4px;
-  text-align: left;
-  padding-bottom: 16px;
-}
 
 /*!
  * Logon Container Flexbox addition
