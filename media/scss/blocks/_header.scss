@@ -53,12 +53,30 @@
     }
   }
 
+  .navbar-brand-right {
+    position: absolute;
+    top: 1em;
+    right: 2em;
+
+    >div {
+      display: inline-block;
+      padding-left: 1em;
+      vertical-align: middle;
+    }
+
+    p {
+      margin: 0 !important;
+      padding: 0 !important;
+    }
+  }
+
   .container-nav {
     flex-wrap: wrap;
     justify-content: space-between;
     padding-bottom: $garibaldi-grid-gutter;
 
     @include media-breakpoint-down(md) {
+
       .container-search,
       nav {
         margin-top: $garibaldi-grid-gutter;
@@ -91,17 +109,17 @@
       flex-direction: row;
     }
 
-    > li {
+    >li {
       position: relative;
 
       @include media-breakpoint-up(lg) {
-        + li {
+        +li {
           margin-left: 1.55em;
         }
       }
 
-      > a,
-      > span {
+      >a,
+      >span {
         position: relative;
         color: currentColor;
         text-decoration: none;
@@ -131,16 +149,17 @@
       }
 
       @include media-breakpoint-down(lg) {
-        &.active > a,
-        &.active > span,
-        > a:hover {
+
+        &.active>a,
+        &.active>span,
+        >a:hover {
           text-decoration: underline;
         }
       }
     }
 
     .parent {
-      > ul {
+      >ul {
         display: none;
         color: $gray-900;
       }
@@ -148,13 +167,13 @@
   }
 
   @if $metismenu==true {
-    .metismenu > li {
-      + li {
+    .metismenu>li {
+      +li {
         margin-left: 0;
       }
 
-      > a::after,
-      > button::before {
+      >a::after,
+      >button::before {
 
         @include media-breakpoint-up(lg) {
           position: absolute;
@@ -171,17 +190,17 @@
         }
       }
 
-      > a:hover::after,
-      > button:hover::before,
-      &.active > a::after,
-      &.active > button::before {
+      >a:hover::after,
+      >button:hover::before,
+      &.active>a::after,
+      &.active>button::before {
         right: 0;
         left: 0;
         background: $white;
       }
 
-      > button.mm-toggler-link:hover::before,
-      &.active > button.mm-toggler-link::before {
+      >button.mm-toggler-link:hover::before,
+      &.active>button.mm-toggler-link::before {
         right: 0;
         left: .5em;
 
@@ -192,18 +211,19 @@
       }
     }
 
-    .metismenu > li.level-1 {
-      &.active > a,
-      &.active > button,
-      > a:hover,
-      > button:hover {
+    .metismenu>li.level-1 {
+
+      &.active>a,
+      &.active>button,
+      >a:hover,
+      >button:hover {
 
         @include media-breakpoint-up(lg) {
           text-decoration: none;
         }
       }
 
-      > ul {
+      >ul {
         min-width: 12rem;
       }
     }
@@ -229,7 +249,7 @@
     flex: 1 0 20rem;
     max-width: 100%;
 
-    > label {
+    >label {
       @include visually-hidden();
     }
   }

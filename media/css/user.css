@@ -6,6 +6,25 @@
   margin-bottom: 0;
 }
 
+.newsflash .opening-hours ul {
+  padding-left: 0;
+}
+
+.newsflash .opening-hours li {
+  list-style: none;
+}
+
+#jevents_body .icon-edit::before {
+  content: 'Edit';
+}
+
+:root {
+  --garibaldi-font-family-body: "Noto Sans", sans-serif;
+  --garibaldi-font-family-headings: 'Playfair Display', serif;
+  --garibaldi-font-weight-headings: 400;
+  --garibaldi-font-weight-normal: 400;
+}
+
 
 @media all and (min-width: 600px) {
   .container-component {
@@ -187,9 +206,6 @@ a:not([class]) {
   text-decoration: none;
 }
 
-.card {
-  border: none;
-}
 .main-top > .card-body {
   padding: 0;
 }
@@ -206,16 +222,28 @@ a:not([class]) {
 .com-content-category-blog__item,
 .card,
 .items-more {
-  background-color: #fff;
-  padding: 1rem !important;
   border-radius: 8px;
   box-shadow: 0px 0px 9px 3px rgba(41, 41, 41, 0.25);
+  padding: 1rem !important;
+  margin-bottom: 1em;
 }
+
 .com-content-category-blog {
+  padding-top: 1em;
+}
+
+.com-content-category-blog .btn-secondary {
+  background-color: transparent;
+}
+.com-content-category-blog .btn-secondary:hover {
+  font-weight: bold;
+}
+
+.com-content-category-blog .blog-item {
   background-color: var(--gari-wall-colour);
-  padding: 1rem !important;
+  /*padding: 1rem !important;
   border-radius: 8px;
-  box-shadow: 0px 0px 9px 3px rgba(41, 41, 41, 0.25);
+  box-shadow: 0px 0px 9px 3px rgba(41, 41, 41, 0.25);*/
 }
 
 .container-component > * + *,
@@ -1142,63 +1170,3 @@ body {
   background: transparent;
 }
 
-/* Akeeba Warning GDPR */
-.akeeba-renderer-fef [class*="akeeba-panel"][class*="teal"] header,
-.akeeba-renderer-fef [class*="akeeba-panel"][class*="primary"] header {
-  background: #816170;
-  border-bottom: 0;
-}
-
-/* Media Queries */
-
-@media all and (min-width: 240px) {
-  .about-me_image {
-    width: 180px;
-  }
-}
-
-@media all and (min-width: 320px) {
-  .about-me_image {
-    width: 240px;
-  }
-}
-
-@media all and (min-width: 420px) {
-  .about-me_image {
-    width: 360px;
-  }
-}
-
-@media all and (min-width: 600px) {
-  .about-me_item {
-    flex: 1 0 0;
-  }
-
-  .about-me_image {
-    width: 360px;
-  }
-}
-
-@media all and (min-width: 800px) {
-  .about-me_item_2 {
-    flex: 3 0px;
-  }
-
-  .about-me_item_1 {
-    order: 1;
-  }
-
-  .about-me_item_2 {
-    order: 2;
-  }
-
-  .about-me_image {
-    width: 240px;
-  }
-}
-
-@media all and (min-width: 1080px) {
-  .about-me_image {
-    width: 240px;
-  }
-}

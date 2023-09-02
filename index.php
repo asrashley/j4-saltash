@@ -131,6 +131,11 @@ $wa->getAsset('style', 'fontawesome')->setAttribute('rel', 'lazy-stylesheet');
 ?>">
     <header class="header container-header full-width<?php echo $stickyHeader ? ' ' . $stickyHeader : ''; ?>">
 
+        <?php if ($this->countModules('brand-right', true)) : ?>
+            <div class="navbar-brand-right">
+                <jdoc:include type="modules" name="brand-right" style="none" />
+            </div>
+        <?php endif; ?>
         <?php if ($this->countModules('topbar')) : ?>
             <div class="container-topbar">
             <jdoc:include type="modules" name="topbar" style="none" />
@@ -153,9 +158,9 @@ $wa->getAsset('style', 'fontawesome')->setAttribute('rel', 'lazy-stylesheet');
                         <div class="site-description"><?php echo htmlspecialchars($this->params->get('siteDescription')); ?></div>
                     <?php endif; ?>
                 </div>
-            </div>
+           </div>
         <?php endif; ?>
-
+ 
         <?php if ($this->countModules('menu', true) || $this->countModules('search', true)) : ?>
             <div class="grid-child container-nav">
                 <?php if ($this->countModules('menu', true)) : ?>
