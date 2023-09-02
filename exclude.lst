@@ -1,0 +1,4 @@
+media/scss/.sass-cache/
+media/css/.sass-cache
+*.scssc
+**/.sass-cache
