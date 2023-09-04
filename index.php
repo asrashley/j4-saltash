@@ -32,9 +32,11 @@ $view     = $input->getCmd('view', '');
 $layout   = $input->getCmd('layout', '');
 $task     = $input->getCmd('task', '');
 $itemid   = $input->getCmd('Itemid', '');
-$sitename = htmlspecialchars($app->get('sitename'), ENT_QUOTES, 'UTF-8');
+$sitename = htmlspecialchars($app->get('sitename') ?? '', ENT_QUOTES, 'UTF-8');
 $menu     = $app->getMenu()->getActive();
 $pageclass = $menu !== null ? $menu->getParams()->get('pageclass_sfx', '') : '';
+$siteCopyright = htmlspecialchars($this->params->get('siteCopyright') ?? '', ENT_QUOTES, 'UTF-8');
+//$templatePath = 'templates/' . $this->template;
 
 // Color Theme
 $paramsColorName = $this->params->get('colorName', 'colors_standard');
@@ -229,13 +231,18 @@ $wa->getAsset('style', 'fontawesome')->setAttribute('rel', 'lazy-stylesheet');
         <?php endif; ?>
     </div>
 
-    <?php if ($this->countModules('footer', true)) : ?>
     <footer class="container-footer footer full-width">
-        <div class="grid-child">
-            <jdoc:include type="modules" name="footer" style="none" />
-        </div>
+        <?php if ($this->countModules('footer', true)) : ?>
+            <div class="grid-child">
+                <jdoc:include type="modules" name="footer" style="none" />
+        <   /div>
+        <?php endif; ?>
+        <?php if ($siteCopyright) : ?>
+            <div class="copyright">
+                <small>&copy; <?php echo date("Y"); ?> <?php echo $siteCopyright; ?></small>
+            </div>
+        <?php endif; ?>
     </footer>
-    <?php endif; ?>
 
     <?php if ($this->params->get('backTop') == 1) : ?>
         <a href="#top" id="back-top" class="back-to-top-link" aria-label="<?php echo Text::_('TPL_GARIBALDI_BACKTOTOP'); ?>">

@@ -91,6 +91,15 @@
                 />
 
                 <field
+                    name="siteCopyright"
+                    type="text"
+                    default=""
+                    label="TPL_GARIBALDI_COPYRIGHT"
+                    filter="string"
+                    showon="brand:1"
+                />
+
+                <field
                     name="useFontScheme"
                     type="groupedlist"
                     label="TPL_GARIBALDI_FONT_LABEL"
