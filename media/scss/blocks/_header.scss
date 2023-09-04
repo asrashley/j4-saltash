@@ -70,6 +70,12 @@
     }
   }
 
+  @include media-breakpoint-down(sm) {
+    .navbar-brand-right {
+      display: none;
+    }
+  }
+
   .container-nav {
     flex-wrap: wrap;
     justify-content: space-between;
