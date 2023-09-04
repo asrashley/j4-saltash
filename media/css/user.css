@@ -1,8 +1,8 @@
-.newsflash .contact-details  {
-  margin-top: 1em; 
+.newsflash .contact-details {
+  margin-top: 1em;
 }
 
-.newsflash .contact-details > p {
+.newsflash .contact-details>p {
   margin-bottom: 0;
 }
 
@@ -32,18 +32,21 @@
     transition: width 0.5s ease-in-out;
   }
 }
+
 @media all and (min-width: 800px) {
   .container-component {
     width: 80% !important;
     transition: width 0.5s ease-in-out;
   }
 }
+
 @media all and (min-width: 1080px) {
   .container-component {
     width: 70% !important;
     transition: width 0.5s ease-in-out;
   }
 }
+
 .head-wrapper {
   height: 140px;
   background-color: #f7edef;
@@ -58,7 +61,7 @@
   }
 }
 
-.head-wrapper > * {
+.head-wrapper>* {
   flex: 1 100%;
 }
 
@@ -90,15 +93,19 @@
   .aside {
     flex: 1 0 0;
   }
+
   .logo {
     order: 1;
   }
+
   .subhead-wrapper {
     order: 3;
   }
+
   .menu-nav {
     order: 2;
   }
+
   .above-menu-wrapper {
     order: 1;
   }
@@ -108,18 +115,23 @@
   .subhead-wrapper {
     flex: 3 0px;
   }
+
   .logo {
     order: 1;
   }
+
   .subhead-wrapper {
     order: 2;
   }
+
   .menu-nav {
     flex: 3 0px;
   }
+
   .menu-nav {
     order: 2;
   }
+
   .above-menu-wrapper {
     order: 1;
   }
@@ -130,16 +142,20 @@
   padding-bottom: 1rem;
   box-shadow: 0px 0px 9px 3px rgba(41, 41, 41, 0.25);
 }
+
 .container-header .navbar-toggler {
   color: #816170;
   border: 1px solid #816170;
 }
+
 .mod-menu_dropdown-metismenu {
   background-color: #f7edef;
 }
+
 .container-header .navbar-brand {
   height: 2em;
 }
+
 .container-header .navbar-brand a {
   font-family: var(--garibaldi-font-family-headings);
   color: gold;
@@ -152,12 +168,28 @@
   color: gold;
 }
 
-.mm-collapse > .level-2 > a {
+/* Welcome article on front page */
+.main-top.card {
+  border: none;
+  box-shadow: none;
+}
+
+.main-top>.card-body {
+  padding: 0;
+}
+
+@media (max-width: 979px) {
+  .main-top .welcome-pub-sign {
+    display: none;
+  }
+}
+
+.mm-collapse>.level-2>a {
   padding: 4px;
   text-decoration: none;
 }
 
-.mm-collapse > .level-2 > a:hover {
+.mm-collapse>.level-2>a:hover {
   background-color: #eed3d4;
   padding: 4px;
   width: 100%;
@@ -171,53 +203,41 @@
   background-color: #f7edef;
   box-shadow: 0px 0px 9px 3px rgba(41, 41, 41, 0.25);
 }
+
 .mod-breadcrumbs__wrapper ol {
   border-radius: 4px;
 }
+
 .fields-container {
   list-style: none;
 }
 
-.page-item.active .page-link {
-  color: #816170;
-}
-.page-header h1,
-.page-header h2,
-.page-header h3,
-.page-header h1 a,
-.page-header h2 a,
-.page-header h3 a {
-  font-family: "Lora", serif !important;
-  font-weight: 500;
-  color: #816170;
-}
-.readmore + .fields-container {
-  display: none;
-}
 .item-image img {
   width: 100%;
   height: auto;
   border-radius: 8px;
 }
+
 .extra-space {
   padding-right: 1px;
 }
+
 a:not([class]) {
   text-decoration: none;
 }
 
-.main-top > .card-body {
-  padding: 0;
-}
 .footer {
   box-shadow: 0px 0px 9px 3px rgba(41, 41, 41, 0.25);
 }
-.footer > .grid-child {
+
+.footer>.grid-child {
   flex-direction: column;
 }
+
 .main-bottom {
   margin-top: 1rem !important;
 }
+
 .com-content-article,
 .com-content-category-blog__item,
 .card,
@@ -308,7 +328,7 @@ a:not([class]) {
 }
 
 @media (max-width: 979px) {
-  #toolbar > div > div > div:after {
+  #toolbar>div>div>div:after {
     display: inline-block;
     content: " ";
     background-size: 240px 80px;
@@ -319,7 +339,7 @@ a:not([class]) {
 }
 
 @media (max-width: 319px) {
-  #toolbar > div > div > div:after {
+  #toolbar>div>div>div:after {
     display: inline-block;
     content: " ";
     background-size: 80px 80px;
@@ -336,59 +356,3 @@ a:not([class]) {
 .row-fluid .span6 {
   padding: 0 20px;
 }
-
-/* make languages visible over toolbar */
-.lang-switch {
-  right: 0;
-}
-
-/* Header Styles */
-body {
-  margin: 0;
-}
-
-.header-logo {
-  position: absolute;
-  top: 0;
-  left: 0;
-  /* transition: transform .3s ease-out;
-  transform: translateX(-50%) scale(.7);
-  transform-origin: 50% 0; */
-  padding: 8px 16px;
-  z-index: 1031;
-}
-
-.header-image {
-  width: 400px;
-}
-
-.header-main-bar {
-  text-align: center;
-  width: 100%;
-}
-
-.header-wrapper {
-  display: flex;
-  flex-flow: row nowrap;
-  text-align: center;
-  flex-wrap: no-wrap;
-  justify-content: space-around;
-}
-
-.header-dummy {
-  flex-basis: 400px;
-}
-
-.header-item {
-  flex: 1 400px;
-  height: 152px;
-}
-
-.header-item-1 {
-  background: transparent;
-}
-
-.header-item-2 {
-  background: transparent;
-}
-
