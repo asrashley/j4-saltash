@@ -131,7 +131,6 @@
                     >
                     <option value="colors_standard">TPL_GARIBALDI_COLOR_NAME_STANDARD</option>
                     <option value="colors_alternative">TPL_GARIBALDI_COLOR_NAME_ALTERNATIVE</option>
-                    <option value="colors_mscom">TPL_GARIBALDI_COLOR_NAME_MSCOM</option>
                 </field>
 
                 <field
