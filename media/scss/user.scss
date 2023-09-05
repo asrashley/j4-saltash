@@ -175,10 +175,6 @@ body.wrapper-fluid .site-grid .container-sidebar-left {
   }
 
   #jevents_body {
-    .icon-edit::before {
-      content: 'Edit';
-    }
-
     #cal_title {
       opacity: 0;
     }
@@ -205,6 +201,23 @@ body.wrapper-fluid .site-grid .container-sidebar-left {
       .jev_evdt_header {
         background-color: var(--gari-woodwork-colour);
         padding: 0 1em;
+        position: relative;
+
+        .icon-edit {
+          height: 2em;
+          width: 2em;
+        }
+
+        .jev_evdt_icons {
+          margin-top: 0;
+          position: absolute;
+          top: 0.5em;
+          right: 2em;
+
+          >a {
+            color: white;
+          }
+        }
       }
     }
 
