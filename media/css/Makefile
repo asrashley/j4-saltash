@@ -18,9 +18,9 @@ user.css user.min.css user.min.css.gz
 %.css: %.scss
 	sass $< > $@
 
-.PHONY: global vendor
+.PHONY: global
 
-all: global vendor $(ALL)
+all: global $(ALL)
 
 template.css: $(TEMPLATE_SRCS)
 
@@ -31,10 +31,6 @@ offline.css: $(TEMPLATE_SRCS)
 global:
 	$(MAKE) -C global
 
-vendor:
-	$(MAKE) -C vendor
-
 clean:
 	$(RM) $(ALL)
 	$(MAKE) -C global clean
-	$(MAKE) -C vendor clean
