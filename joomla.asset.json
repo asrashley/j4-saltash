@@ -10,14 +10,18 @@
       "description": "The css file to be used when the site is left to right (LTR).",
       "type": "style",
       "uri": "template.min.css",
-      "dependencies": ["fontawesome"]
+      "dependencies": [
+        "fontawesome"
+      ]
     },
     {
       "name": "template.garibaldi.rtl",
       "description": "The css file to be used when the site is right to left (RTL).",
       "type": "style",
       "uri": "template-rtl.min.css",
-      "dependencies": ["fontawesome"]
+      "dependencies": [
+        "fontawesome"
+      ]
     },
     {
       "name": "template.offline",
@@ -31,14 +35,19 @@
       "type": "style",
       "uri": "",
       "class": "LangActiveAssetItem",
-      "dependencies": ["template.active"]
+      "dependencies": [
+        "template.active"
+      ]
     },
     {
       "name": "template.user",
       "description": "A file where a user can add their own css.",
       "type": "style",
-      "uri": "user.css",
-      "dependencies": ["template.active", "template.active.language"]
+      "uri": "media/templates/site/garibaldi/css/user.css",
+      "dependencies": [
+        "template.active",
+        "template.active.language"
+      ]
     },
     {
       "name": "template.garibaldi",
@@ -48,21 +57,27 @@
       "attributes": {
         "defer": true
       },
-      "dependencies": ["core"]
+      "dependencies": [
+        "core"
+      ]
     },
     {
       "name": "template.active",
       "description": "A dummy asset to allow extensions to use it as a dependency to the active template.",
       "type": "script",
       "uri": "",
-      "dependencies": ["template.garibaldi"]
+      "dependencies": [
+        "template.garibaldi"
+      ]
     },
     {
       "name": "template.user",
       "description": "The name of a file where a user can add their own javascript",
       "type": "script",
       "uri": "user.js",
-      "dependencies": ["template.active"]
+      "dependencies": [
+        "template.active"
+      ]
     },
     {
       "name": "template.garibaldi.ltr",

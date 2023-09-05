@@ -5,7 +5,8 @@ TEMPLATE_SRCS += $(wildcard ../scss/vendor/*.scss ../scss/vendor/*/*.scss)
 
 ALL = template.css template.min.css template.min.css.gz \
 template-rtl.css template-rtl.min.css template-rtl.min.css.gz \
-offline.css offline.min.css offline.min.css.gz
+offline.css offline.min.css offline.min.css.gz \
+user.css user.min.css user.min.css.gz
 
 %.min.css.gz: %.min.css
 	$(RM) $@

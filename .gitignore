@@ -1,6 +1,7 @@
 .sass-cache
 media/css/offline*
 media/css/template*
+media/css/user*
 media/css/global/fonts-*.css*
 media/css/global/colors_*.css*
 media/css/vendor/choicesjs/choices*
