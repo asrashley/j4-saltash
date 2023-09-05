@@ -84,7 +84,8 @@ a {
 
 .btn-group {
   margin-bottom: $garibaldi-grid-gutter;
-  > input {
+
+  >input {
     padding: $garibaldi-grid-gutter/2;
     border: 1px solid $gray-400;
     @include border-start-radius($border-radius);
@@ -93,13 +94,14 @@ a {
 }
 
 [dir="rtl"] .btn-group {
-  > input {
+  >input {
     @include border-end-radius($border-radius);
     @include border-start-radius(0);
   }
 }
 
 .com-content-article {
+
   ol,
   ul {
     overflow: hidden;
@@ -195,16 +197,20 @@ th dd {
 
 figure {
   margin: 0 0 ($garibaldi-grid-gutter*2);
+
   &.float-start {
     margin-right: $garibaldi-grid-gutter;
   }
+
   &.float-end {
     margin-left: $garibaldi-grid-gutter;
   }
+
   [dir="rtl"] &.float-start {
     margin-right: 0;
     margin-left: $garibaldi-grid-gutter;
   }
+
   [dir="rtl"] &.float-end {
     margin-right: $garibaldi-grid-gutter;
     margin-left: 0;
@@ -228,6 +234,7 @@ meter {
 .pagenavigation,
 .pager {
   clear: both;
+
   .pagination {
     justify-content: space-between;
     padding: 0;
@@ -246,6 +253,7 @@ meter {
 
 .page-link {
   color: var(--garibaldi-color-link);
+
   &:hover {
     color: var(--garibaldi-color-link);
   }
