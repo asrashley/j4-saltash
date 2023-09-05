@@ -133,8 +133,13 @@
 
   .blog-item {
     background-color: var(--gari-wall-colour);
+
+    .text-muted .article-info-term {
+      display: none;
+    }
   }
 }
+
 
 .container-component>*+*,
 .container-component> :first-child,
