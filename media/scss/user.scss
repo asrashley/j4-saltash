@@ -238,3 +238,11 @@ body.wrapper-fluid .site-grid .container-sidebar-left {
 .row-fluid .span6 {
   padding: 0 20px;
 }
+
+.mod-login-logout .logout-button {
+  padding-top: 1em;
+
+  .btn {
+    padding: 0.25em 1em;
+  }
+}
