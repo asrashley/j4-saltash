@@ -40,30 +40,30 @@ $siteCopyright = htmlspecialchars($this->params->get('siteCopyright') ?? '', ENT
 
 // Color Theme
 $paramsColorName = $this->params->get('colorName', 'colors_standard');
+$paramsBrandingFont = $this->params->get('brandingFont', 'sans-serif');
+$paramsHeaderFont = $this->params->get('headerFont', 'sans-serif');
+$paramsBodyFont = $this->params->get('bodyFont', 'sans-serif');
 $assetColorName  = 'theme.' . $paramsColorName;
 $wa->registerAndUseStyle($assetColorName, 'media/templates/site/garibaldi/css/global/' . $paramsColorName . '.css');
 
-// Use a font scheme if set in the template style options
-$paramsFontScheme = $this->params->get('useFontScheme', false);
-$fontStyles       = '';
+$fontStyles       = '--garibaldi-font-family-branding: ' . $paramsBrandingFont . ';
+--garibaldi-font-family-headings:' . $paramsHeaderFont . ';
+--garibaldi-font-family-body:' . $paramsBodyFont . ';';
 
-if ($paramsFontScheme) {
-    if (stripos($paramsFontScheme, 'https://') === 0) {
-        $this->getPreloadManager()->preconnect('https://fonts.googleapis.com/', ['crossorigin' => 'anonymous']);
-        $this->getPreloadManager()->preconnect('https://fonts.gstatic.com/', ['crossorigin' => 'anonymous']);
-        $this->getPreloadManager()->preload($paramsFontScheme, ['as' => 'style', 'crossorigin' => 'anonymous']);
-        $wa->registerAndUseStyle('fontscheme.current', $paramsFontScheme, [], ['media' => 'print', 'rel' => 'lazy-stylesheet', 'onload' => 'this.media=\'all\'', 'crossorigin' => 'anonymous']);
+$this->getPreloadManager()->preconnect('https://fonts.googleapis.com/', ['crossorigin' => 'anonymous']);
+$this->getPreloadManager()->preconnect('https://fonts.gstatic.com/', ['crossorigin' => 'anonymous']);
 
-        if (preg_match_all('/family=([^?:]*):/i', $paramsFontScheme, $matches) > 0) {
-            $fontStyles = '--garibaldi-font-family-body: "' . str_replace('+', ' ', $matches[1][0]) . '", sans-serif;
-            --garibaldi-font-family-headings: "' . str_replace('+', ' ', isset($matches[1][1]) ? $matches[1][1] : $matches[1][0]) . '", sans-serif;
-            --garibaldi-font-weight-normal: 400;
-            --garibaldi-font-weight-headings: 700;';
-        }
-    } else {
-        $wa->registerAndUseStyle('fontscheme.current', $paramsFontScheme, ['version' => 'auto'], ['media' => 'print', 'rel' => 'lazy-stylesheet', 'onload' => 'this.media=\'all\'']);
-        $this->getPreloadManager()->preload($wa->getAsset('style', 'fontscheme.current')->getUri() . '?' . $this->getMediaVersion(), ['as' => 'style']);
-    }
+if ($this->params->get('loadNotoFont')) {
+    $wa->useStyle('template.font.noto');
+}
+if ($this->params->get('loadPlayfairFont')) {
+    $wa->useStyle('template.font.playfair');
+}
+if ($this->params->get('loadRobotoFont')) {
+    $wa->useStyle('template.font.roboto');
+}
+if ($this->params->get('loadSanchezFont')) {
+    $wa->useStyle('template.font.sanchez');
 }
 
 // Enable assets

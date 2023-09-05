@@ -9,16 +9,17 @@
       "name": "template.garibaldi.ltr",
       "description": "The css file to be used when the site is left to right (LTR).",
       "type": "style",
-      "uri": "template.min.css",
+      "uri": "media/templates/site/garibaldi/css/template.css",
       "dependencies": [
-        "fontawesome"
+        "fontawesome",
+        "searchtools"
       ]
     },
     {
       "name": "template.garibaldi.rtl",
       "description": "The css file to be used when the site is right to left (RTL).",
       "type": "style",
-      "uri": "template-rtl.min.css",
+      "uri": "media/templates/site/garibaldi/css/template-rtl.css",
       "dependencies": [
         "fontawesome"
       ]
@@ -103,7 +104,27 @@
     {
       "name": "fontawesome",
       "type": "style",
-      "uri": "system/joomla-fontawesome.min.css"
+      "uri": "system/css/joomla-fontawesome.css"
+    },
+    {
+      "name": "template.font.noto",
+      "type": "style",
+      "uri": "media/templates/site/garibaldi/css/global/fonts-noto.css"
+    },
+    {
+      "name": "template.font.playfair",
+      "type": "style",
+      "uri": "media/templates/site/garibaldi/css/global/fonts-playfair.css"
+    },
+    {
+      "name": "template.font.roboto",
+      "type": "style",
+      "uri": "media/templates/site/garibaldi/css/global/fonts-roboto.css"
+    },
+    {
+      "name": "template.font.sanchez",
+      "type": "style",
+      "uri": "media/templates/site/garibaldi/css/global/fonts-sanchez.css"
     }
   ]
 }

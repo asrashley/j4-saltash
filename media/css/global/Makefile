@@ -1,12 +1,18 @@
 VPATH = ../../scss/global:../../scss/tools
 
 ALL = \
-fonts-local_roboto.css \
-fonts-local_roboto.min.css \
-fonts-local_roboto.min.css.gz \
-fonts-web_playfair.css \
-fonts-web_playfair.min.css \
-fonts-web_playfair.min.css.gz \
+fonts-noto.css \
+fonts-noto.min.css \
+fonts-noto.min.css.gz \
+fonts-playfair.css \
+fonts-playfair.min.css \
+fonts-playfair.min.css.gz \
+fonts-roboto.css \
+fonts-roboto.min.css \
+fonts-roboto.min.css.gz \
+fonts-sanchez.css \
+fonts-sanchez.min.css \
+fonts-sanchez.min.css.gz \
 colors_standard.css \
 colors_standard.min.css \
 colors_standard.min.css.gz \
