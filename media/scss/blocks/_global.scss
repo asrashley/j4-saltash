@@ -31,6 +31,7 @@ h5,
 h6 {
   font-family: var(--garibaldi-font-family-headings, $font-family-serif);
   font-weight: var(--garibaldi-font-weight-headings, $font-weight-bold);
+  color: var(--template-contrast);
 }
 
 .display-1 {
