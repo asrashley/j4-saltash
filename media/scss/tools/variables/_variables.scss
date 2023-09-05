@@ -18,8 +18,8 @@ $variable-prefix: "";
 // Color system
 
 // Standard
-$standard-color-primary: $gari-woodwork-colour;
-$standard-color-link: $gari-woodwork-colour;
+$standard-color-primary: lighten($gari-wall-colour, 5%);
+$standard-color-link: hsl(207, 49%, 37%);
 $standard-color-hover: $gari-wall-colour;
 
 // Alternative
