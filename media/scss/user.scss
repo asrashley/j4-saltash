@@ -134,6 +134,7 @@
     .text-muted .article-info-term {
       display: none;
     }
+
     .icons a:hover {
       color: $indigo;
       font-weight: bold;
@@ -257,6 +258,10 @@ body.wrapper-fluid .site-grid .container-sidebar-left {
   .nav-item {
     background-color: $gray-400;
   }
+}
+
+.edit.item-page button[data-submit-task^="article"] {
+  width: 10em;
 }
 
 // JCE editor modifications
