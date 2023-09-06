@@ -3,7 +3,8 @@ TEMPLATE_SRCS = $(wildcard ../scss/blocks/*.scss ../scss/system/*/*.scss)
 TEMPLATE_SRCS += $(wildcard ../scss/tools/*.scss ../scss/tools/*/*.scss)
 TEMPLATE_SRCS += $(wildcard ../scss/vendor/*.scss ../scss/vendor/*/*.scss)
 
-ALL = template.css template.min.css template.min.css.gz \
+ALL = editor.css editor.min.css editor.min.css.gz \
+template.css template.min.css template.min.css.gz \
 template-rtl.css template-rtl.min.css template-rtl.min.css.gz \
 offline.css offline.min.css offline.min.css.gz \
 user.css user.min.css user.min.css.gz
@@ -19,8 +20,11 @@ user.css user.min.css user.min.css.gz
 	sass $< > $@
 
 .PHONY: global
+.DELETE_ON_ERROR: $(ALL)
 
 all: global $(ALL)
+
+editor.css: $(TEMPLATE_SRCS)
 
 template.css: $(TEMPLATE_SRCS)
 

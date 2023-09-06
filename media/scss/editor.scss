@@ -1,11 +1,19 @@
+@import "vendor/bootstrap/_functions";
+@import "tools/tools";
+@import "vendor/bootstrap/_variables";
+@import "vendor/bootstrap/bootstrap";
+@import "system/scss/jquery-minicolors";
+@import "global/colors_standard";
+
 /* STYLES FOR JOOMLA! EDITOR */
 body {
+  background-color: var(--body-bg);
+  color: var(--body-color);
+  font-family: var(--body-font-family);
+  font-size: var(--body-font-size);
+  font-weight: var(--body-font-weight);
+  line-height: var(--body-line-height);
   margin: 1rem;
-  font-size: 1rem;
-  font-weight: 400;
-  line-height: 1.5;
-  color: #22262a;
-  background-color: #fff;
 }
 
 h1, h2, h3, h4, h5, h6 {
@@ -13,6 +21,9 @@ h1, h2, h3, h4, h5, h6 {
   margin-bottom: .5rem;
   font-weight: 700;
   line-height: 1.2;
+  font-family: var(--garibaldi-font-family-headings, $font-family-sans-serif);
+  font-weight: var(--garibaldi-font-weight-headings, 700);
+  color: var(--template-contrast);
 }
 
 h1 {
