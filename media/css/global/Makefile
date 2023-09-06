@@ -1,4 +1,5 @@
 VPATH = ../../scss/global:../../scss/tools
+TEMPLATE_SRCS = $(wildcard ../../scss/tools/*.scss ../../scss/tools/*/*.scss)
 
 ALL = \
 fonts-noto.css \
@@ -33,12 +34,13 @@ colors_alternative.min.css.gz
 	sass $< > $@
 
 .PHONY: clean
+.DELETE_ON_ERROR: $(ALL)
 
 all: $(ALL)
 
-colors_standard.css: _tools.scss colors_standard.scss
+colors_standard.css: _tools.scss colors_standard.scss $(TEMPLATE_SRCS)
 
-colors_alternative.css: _tools.scss colors_alternative.scss
+colors_alternative.css: _tools.scss colors_alternative.scss $(TEMPLATE_SRCS)
 
 clean:
 	$(RM) $(ALL)
