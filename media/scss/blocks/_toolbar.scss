@@ -46,7 +46,7 @@
     font-size: 1rem;
     line-height: 2.45rem;
     color: #495057;
-    background: $white;
+    background: $gray-300;
     border-color: $gray-500;
 
     > span {
@@ -57,7 +57,7 @@
     &:not([disabled]):hover,
     &:not([disabled]):active,
     &:not([disabled]):focus {
-      color: rgba(255, 255, 255, .9);
+      color: $gray-800;
       background-color: var(--subhead-btn-accent);
       border-color: var(--subhead-btn-accent);
 

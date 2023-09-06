@@ -134,6 +134,10 @@
     .text-muted .article-info-term {
       display: none;
     }
+    .icons a:hover {
+      color: $indigo;
+      font-weight: bold;
+    }
   }
 }
 
@@ -242,5 +246,37 @@ body.wrapper-fluid .site-grid .container-sidebar-left {
 
   .btn {
     padding: 0.25em 1em;
+  }
+}
+
+/* Front-end editing */
+
+.nav.nav-tabs {
+  background-color: $gray-600;
+
+  .nav-item {
+    background-color: $gray-400;
+  }
+}
+
+// JCE editor modifications
+/*div[data-url].wf-media-wrapper>*/
+
+//.modal-dialog.jviewport-width80 .modal-content {
+//  width: 80vw;
+//}
+
+#toolbar {
+  width: 100%;
+
+  joomla-toolbar-button {
+    display: inline-block;
+
+    >.btn {
+      background-color: $gray-400;
+      text-align: center;
+      color: black;
+      width: 14em;
+    }
   }
 }
