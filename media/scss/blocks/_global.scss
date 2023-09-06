@@ -29,7 +29,7 @@ h3,
 h4,
 h5,
 h6 {
-  font-family: var(--garibaldi-font-family-headings, $font-family-serif);
+  font-family: var(--garibaldi-font-family-headings, $font-family-sans-serif);
   font-weight: var(--garibaldi-font-weight-headings, $font-weight-bold);
   color: var(--template-contrast);
 }
