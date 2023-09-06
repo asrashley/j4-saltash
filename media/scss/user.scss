@@ -33,8 +33,6 @@
     height: 2em;
 
     .brand-logo {
-      color: gold;
-      font-family: var(--garibaldi-font-family-branding);
       font-size: 2.5rem;
       line-height: 2rem;
       text-decoration: none;
@@ -42,7 +40,6 @@
     }
 
     .site-description {
-      color: gold;
       font-family: var(--garibaldi-font-family-body);
       font-size: 1.25rem;
     }
@@ -132,7 +129,7 @@
   }
 
   .blog-item {
-    background-color: var(--gari-wall-colour);
+    background-color: var(--garibaldi-wall-colour);
 
     .text-muted .article-info-term {
       display: none;
@@ -188,7 +185,7 @@ body.wrapper-fluid .site-grid .container-sidebar-left {
     }
 
     .jev_evdt {
-      background-color: var(--gari-wall-colour);
+      background-color: var(--garibaldi-wall-colour);
       border: 1px solid black;
       border-radius: 1em;
       overflow: hidden;
@@ -199,7 +196,8 @@ body.wrapper-fluid .site-grid .container-sidebar-left {
       }
 
       .jev_evdt_header {
-        background-color: var(--gari-woodwork-colour);
+        background-color: var(--garibaldi-woodwork-colour);
+        color: var(--light);
         padding: 0 1em;
         position: relative;
 

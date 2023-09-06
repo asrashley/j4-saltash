@@ -51,6 +51,15 @@
     &:focus {
       color: scale-color($white, $lightness: -6%);
     }
+
+    .brand-logo {
+      color: $garibaldi-header-colour;
+      font-family: var(--garibaldi-font-family-branding);
+    }
+
+    .site-description {
+      color: $garibaldi-header-colour;
+    }
   }
 
   .navbar-brand-right {

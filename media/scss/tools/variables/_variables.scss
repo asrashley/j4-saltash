@@ -1,13 +1,13 @@
 // Global
-$gari-wall-colour: #deccb4;
-// $body-background: lighten($root-background, 5%);
-$gari-woodwork-colour: #938c6f;
+$garibaldi-wall-colour: lighten(#deccb4, 5%);
+$garibaldi-woodwork-colour: #938c6f;
 
 $garibaldi-container-main-bg: hsl(0, 0%, 95%) !default;
 $garibaldi-border-color: hsl(210, 14%, 89%) !default;
 $garibaldi-box-shadow: 1px 1px 4px hsla(0, 0%, 0%, .1) !default;
 $garibaldi-block-header-bg: #001 !default;
 $garibaldi-block-header-alt: #253045 !default;
+$garibaldi-header-colour: gold;
 $garibaldi-header-grad: linear-gradient(135deg, $garibaldi-block-header-bg 0%, $garibaldi-block-header-alt 100%);
 $garibaldi-header-grad-rtl: linear-gradient(135deg, $garibaldi-block-header-alt 0%, $garibaldi-block-header-bg 100%);
 $garibaldi-inverted-text-color: var(--garibaldi-color-hover);
@@ -18,9 +18,9 @@ $variable-prefix: "";
 // Color system
 
 // Standard
-$standard-color-primary: lighten($gari-wall-colour, 5%);
+$standard-color-primary: $garibaldi-wall-colour;
 $standard-color-link: hsl(207, 49%, 37%);
-$standard-color-hover: $gari-wall-colour;
+$standard-color-hover: $garibaldi-wall-colour;
 
 // Alternative
 $alternative-color-primary: hsl(351, 54%, 37%);
@@ -168,7 +168,6 @@ $garibaldi-toolbar-line-height: 1.8rem;
 
 // Typography
 $font-family-sans-serif: -apple-system, BlinkMacSystemFont, "Segoe UI", Roboto, "Helvetica Neue", Arial, "Noto Sans", sans-serif, "Apple Color Emoji", "Segoe UI Emoji", "Segoe UI Symbol", "Noto Color Emoji" !default;
-$font-family-serif: "Playfair Display", serif;
 $font-family-base: var(--garibaldi-font-family-body, $font-family-sans-serif);
 
 // Icons
