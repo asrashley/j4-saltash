@@ -50,6 +50,12 @@ $fontStyles       = '--garibaldi-font-family-branding: ' . $paramsBrandingFont .
 --garibaldi-font-family-headings:' . $paramsHeaderFont . ';
 --garibaldi-font-family-body:' . $paramsBodyFont . ';';
 
+if ($this->params->get('logoFile')) {
+    $logoUrl = Uri::root(false) . htmlspecialchars($this->params->get('logoFile'), ENT_QUOTES);
+} else {
+    $logoUrl = Uri::root(false) . 'logo.svg';
+}
+
 $this->getPreloadManager()->preconnect('https://fonts.googleapis.com/', ['crossorigin' => 'anonymous']);
 $this->getPreloadManager()->preconnect('https://fonts.gstatic.com/', ['crossorigin' => 'anonymous']);
 
@@ -78,20 +84,12 @@ $wa->usePreset('template.garibaldi.' . ($this->direction === 'rtl' ? 'rtl' : 'lt
         --template-text-light: #ffffff;
         --template-link-color: #2a69b8;
         --template-special-color: #001B4C;
+        --garibaldi-branding-img: url($logoUrl);
         $fontStyles
     }");
 
 // Override 'template.active' asset to set correct ltr/rtl dependency
 $wa->registerStyle('template.active', '', [], [], ['template.garibaldi.' . ($this->direction === 'rtl' ? 'rtl' : 'ltr')]);
-
-// Logo file or site title param
-if ($this->params->get('logoFile')) {
-    $logo = HTMLHelper::_('image', Uri::root(false) . htmlspecialchars($this->params->get('logoFile'), ENT_QUOTES), $sitename, ['loading' => 'eager', 'decoding' => 'async'], false, 0);
-} elseif ($this->params->get('siteTitle')) {
-    $logo = '<span title="' . $sitename . '">' . htmlspecialchars($this->params->get('siteTitle'), ENT_COMPAT, 'UTF-8') . '</span>';
-} else {
-    $logo = HTMLHelper::_('image', 'logo.svg', $sitename, ['class' => 'logo d-inline-block', 'loading' => 'eager', 'decoding' => 'async'], true, 0);
-}
 
 $hasClass = '';
 
@@ -130,12 +128,7 @@ $stickyHeader = $this->params->get('stickyHeader') ? 'position-sticky sticky-top
     . ($this->direction == 'rtl' ? ' rtl' : '');
 ?>">
     <header class="header container-header full-width<?php echo $stickyHeader ? ' ' . $stickyHeader : ''; ?>">
-
-        <?php if ($this->countModules('brand-right', true)) : ?>
-            <div class="navbar-brand-right">
-                <jdoc:include type="modules" name="brand-right" style="none" />
-            </div>
-        <?php endif; ?>
+        
         <?php if ($this->countModules('topbar')) : ?>
             <div class="container-topbar">
             <jdoc:include type="modules" name="topbar" style="none" />
@@ -149,10 +142,17 @@ $stickyHeader = $this->params->get('stickyHeader') ? 'position-sticky sticky-top
         <?php endif; ?>
 
         <?php if ($this->params->get('brand', 1)) : ?>
-            <div class="grid-child">
+            <div class="grid-child container-navbar-brand">
                 <div class="navbar-brand">
+                    <?php if ($this->params->get('logoFile')) : ?>
+                        <div class="brand-img"> &nbsp; </div>
+                    <?php endif; ?>
                     <a class="brand-logo" href="<?php echo $this->baseurl; ?>/">
-                        <?php echo $logo; ?>
+                        <?php if ($this->params->get('siteTitle')) : ?>
+                        <span title="<?php echo $sitename; ?>">
+                            <?php echo htmlspecialchars($this->params->get('siteTitle'), ENT_COMPAT, 'UTF-8'); ?>
+                        </span>
+                        <?php endif; ?>
                     </a>
                     <?php if ($this->params->get('siteDescription')) : ?>
                         <div class="site-description"><?php echo htmlspecialchars($this->params->get('siteDescription')); ?></div>
@@ -171,6 +171,11 @@ $stickyHeader = $this->params->get('stickyHeader') ? 'position-sticky sticky-top
                         <jdoc:include type="modules" name="search" style="none" />
                     </div>
                 <?php endif; ?>
+            </div>
+        <?php endif; ?>
+        <?php if ($this->countModules('brand-right', true)) : ?>
+            <div class="navbar-brand-right grid-child">
+                <jdoc:include type="modules" name="brand-right" style="none" />
             </div>
         <?php endif; ?>
     </header>
