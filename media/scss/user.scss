@@ -289,3 +289,15 @@ body.wrapper-fluid .site-grid .container-sidebar-left {
     }
   }
 }
+
+/* Phoca downloads */
+.pd-categories-view {
+  .row>.col {
+    min-width: 15em;
+  }
+
+  .card-title>a {
+    font-size: 1.5rem;
+    text-decoration: none;
+  }
+}
