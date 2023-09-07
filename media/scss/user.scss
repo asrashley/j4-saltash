@@ -323,3 +323,20 @@ body.wrapper-fluid .site-grid .container-sidebar-left {
     text-decoration: none;
   }
 }
+
+/* Phoca Gallery */
+#phocagallery {
+  .pg-category-box {
+    @include shadow-card;
+
+    .pg-category-box-title {
+      background-color: inherit;
+      @include gradient-y(rgba($gray-300, 0.2), rgba($garibaldi-wall-colour, 0.8));
+
+      &>a {
+        color: var(--garibaldi-color-link);
+        text-decoration: none;
+      }
+    }
+  }
+}
