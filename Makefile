@@ -12,6 +12,7 @@ ZIP_CONTENTS = \
 *.xml \
 *.png \
 html \
+images \
 media \
 language
 
@@ -36,8 +37,7 @@ deploy:
 	$(CP) *.php $(TEMPLATE_DEST)/
 	$(CP) *.xml $(TEMPLATE_DEST)/
 	$(CP) joomla.asset.json $(TEMPLATE_DEST)/
-	# cd media && $(TAR) -cf - * | $(TAR) -xf - -C $(MEDIA_DEST)
-	$(CP) -r media/css $(TEMPLATE_DEST)
+	$(CP) -r images $(TEMPLATE_DEST)
 	$(CP) -r media/css $(MEDIA_DEST)
 	$(CP) -r media/images $(MEDIA_DEST)
 	$(CP) -r media/js $(MEDIA_DEST)
