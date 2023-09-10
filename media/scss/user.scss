@@ -134,7 +134,6 @@
   .com-content-category-blog .blog-item {
     background-color: inherit !important;
     padding: 1em;
-    @include gradient-y(rgba($gray-200, 0.2), $garibaldi-wall-colour);
   }
 }
 
@@ -176,8 +175,6 @@
   }
 
   .blog-item {
-    background-color: var(--garibaldi-wall-colour);
-
     .text-muted .article-info-term {
       display: none;
     }
