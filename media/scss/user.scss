@@ -225,6 +225,14 @@ body.wrapper-fluid .site-grid .container-sidebar-left {
       border-spacing: 0;
       border: 1px solid black;
       overflow: hidden;
+
+      .ev_td_left {
+        display: none;
+      }
+
+      a.ev_link_row:link {
+        font-size: 1.25rem;
+      }
     }
 
     .jev_evdt {
