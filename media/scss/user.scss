@@ -340,3 +340,15 @@ body.wrapper-fluid .site-grid .container-sidebar-left {
     }
   }
 }
+
+/* allow an article to have a background image, by adding the class name
+"background" to an image in the article */
+img.background {
+  display: none;
+}
+
+.has-background .item-content,
+.has-background .ev_ul {
+  background-color: rgba(white, 0.5);
+  padding: 0 1em;
+}
