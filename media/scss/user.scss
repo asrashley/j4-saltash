@@ -280,6 +280,18 @@ body.wrapper-fluid .site-grid .container-sidebar-left {
   }
 }
 
+.upcoming-events {
+  .card-header {
+    background-color: inherit;
+    border-bottom: none;
+    color: var(--template-contrast);
+  }
+
+  .mod_events_latest_table td {
+    padding-bottom: 0.5em;
+  }
+}
+
 #featured {
   border-radius: 8px;
 }
