@@ -352,11 +352,17 @@ body.wrapper-fluid .site-grid .container-sidebar-left {
 /* Phoca Gallery */
 #phocagallery {
   .pg-category-box {
-    @include shadow-card;
+    border: none;
 
     .pg-category-box-title {
       background-color: inherit;
-      @include gradient-y(rgba($gray-300, 0.2), rgba($garibaldi-wall-colour, 0.8));
+      @include gradient-y(rgba($gray-300, 0.2), rgba($garibaldi-wall-colour, 0.4));
+
+      .ph-si-category,
+      .pg-category-box-count {
+        /* hide folder icon and image count */
+        display: none;
+      }
 
       &>a {
         color: var(--garibaldi-color-link);
