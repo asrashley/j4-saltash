@@ -21,7 +21,11 @@ $app   = Factory::getApplication();
 $input = $app->getInput();
 $wa    = $this->getWebAssetManager();
 
+$this->addHeadLink(HTMLHelper::_('image', 'apple-touch-icon.png', '', [], true, 1), 'apple-touch-icon', 'rel', ['sizes' => '180x180']);
+$this->addHeadLink(HTMLHelper::_('image', 'favicon-32x32.ico', '', [], true, 1), 'icon', 'rel', ['sizes' => '32x32']);
+$this->addHeadLink(HTMLHelper::_('image', 'favicon-16x16.ico', '', [], true, 1), 'icon', 'rel', ['sizes' => '16x16']);
 $this->addHeadLink(HTMLHelper::_('image', 'favicon.ico', '', [], true, 1), 'alternate icon', 'rel', ['type' => 'image/vnd.microsoft.icon']);
+$this->addHeadLink(HTMLHelper::_('image', 'site.webmanifest', '', [], true, 1), 'manifest', 'rel', []);
 
 // Detecting Active Variables
 $option   = $input->getCmd('option', '');
@@ -33,7 +37,6 @@ $sitename = htmlspecialchars($app->get('sitename') ?? '', ENT_QUOTES, 'UTF-8');
 $menu     = $app->getMenu()->getActive();
 $pageclass = $menu !== null ? $menu->getParams()->get('pageclass_sfx', '') : '';
 $siteCopyright = htmlspecialchars($this->params->get('siteCopyright') ?? '', ENT_QUOTES, 'UTF-8');
-//$templatePath = 'templates/' . $this->template;
 
 // Color Theme
 $paramsColorName = $this->params->get('colorName', 'colors_standard');
