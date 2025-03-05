@@ -210,13 +210,28 @@ body.wrapper-fluid .site-grid .container-sidebar-left {
 
 /* jevents */
 #jevents {
-  #jevents_header .contentheading {
-    display: none;
+  #jevents_header {
+    /*.contentheading {
+      display: none;
+    }*/
+    .actions .icon-print {
+      width: 1.5rem;
+    }
   }
 
   #jevents_body {
     #cal_title {
-      opacity: 0;
+      font-size: 1.5rem;
+    }
+
+    .ev_navigation {
+      .vtop > td {
+        min-width: 2rem;
+
+        a > img {
+          width: 100%;
+        }
+      }
     }
 
     .ev_table {
@@ -276,6 +291,14 @@ body.wrapper-fluid .site-grid .container-sidebar-left {
       border-radius: 1em;
       border-spacing: 0;
       overflow: hidden;
+
+      .cal_td_daysnames {
+        padding: 1px 0.7em;
+      }
+
+      .cal_td_weeklink {
+        text-align: center;
+      }
     }
   }
 }
@@ -368,6 +391,15 @@ body.wrapper-fluid .site-grid .container-sidebar-left {
         color: var(--garibaldi-color-link);
         text-decoration: none;
       }
+    }
+
+    .pg-category-box-image {
+        height: 12rem;
+        width: 12rem;
+        img {
+            height: 100%;
+            width: 100%;
+        }
     }
   }
 }
