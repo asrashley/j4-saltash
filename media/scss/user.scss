@@ -356,7 +356,7 @@ body.wrapper-fluid .site-grid .container-sidebar-left {
 
     .pg-category-box-title {
       background-color: inherit;
-      @include gradient-y(rgba($gray-300, 0.2), rgba($garibaldi-wall-colour, 0.4));
+      @include gradient-y(rgba($gray-300, 0.4), rgba($garibaldi-wall-colour, 0.7));
 
       .ph-si-category,
       .pg-category-box-count {
