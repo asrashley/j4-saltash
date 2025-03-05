@@ -71,7 +71,8 @@
 
     .brand-logo {
       color: $garibaldi-header-colour;
-      font-family: var(--garibaldi-font-family-branding);
+      /* font-family: var(--garibaldi-font-family-branding); */
+      font-family: "Margarine", "Comic Sans MS", sans-serif;
     }
 
     .site-description {

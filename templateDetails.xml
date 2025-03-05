@@ -173,7 +173,7 @@
                     <option value="'Playfair Display', serif">TPL_GARIBALDI_FONT_PLAYFAIR</option>
                     <option value="'Roboto', sans-serif">TPL_GARIBALDI_FONT_ROBOTO</option>
                     <option value="'Noto Sans', sans-serif">TPL_GARIBALDI_FONT_NOTO</option>
-                    <option value="'Sanchez', serif">TPL_GARIBALDI_FONT_SANCHEZ</option>
+                    <option value="'Margarine', 'Comic Sans MS', sans-serif">TPL_GARIBALDI_FONT_SANCHEZ</option>
                 </field>
 
                 <field
@@ -185,7 +185,7 @@
                     <option value="'Playfair Display', serif">TPL_GARIBALDI_FONT_PLAYFAIR</option>
                     <option value="'Roboto', sans-serif">TPL_GARIBALDI_FONT_ROBOTO</option>
                     <option value="'Noto Sans', sans-serif">TPL_GARIBALDI_FONT_NOTO</option>
-                    <option value="'Sanchez', serif">TPL_GARIBALDI_FONT_SANCHEZ</option>
+                    <option value="'Margarine', 'Comic Sans MS', sans-serif">TPL_GARIBALDI_FONT_SANCHEZ</option>
                 </field>
 
                 <field
@@ -197,7 +197,7 @@
                     <option value="'Playfair Display', serif">TPL_GARIBALDI_FONT_PLAYFAIR</option>
                     <option value="'Roboto', sans-serif">TPL_GARIBALDI_FONT_ROBOTO</option>
                     <option value="'Noto Sans', sans-serif">TPL_GARIBALDI_FONT_NOTO</option>
-                    <option value="'Sanchez', serif">TPL_GARIBALDI_FONT_SANCHEZ</option>
+                    <option value="'Margarine', 'Comic Sans MS', sans-serif">TPL_GARIBALDI_FONT_SANCHEZ</option>
                 </field>
 
                 <field
