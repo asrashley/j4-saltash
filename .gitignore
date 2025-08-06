@@ -8,3 +8,4 @@ media/css/global/colors_*.css*
 media/css/vendor/choicesjs/choices*
 media/js/user.min.js*
 saltash.zip
+node_modules

@@ -1,4 +1,6 @@
 VPATH = ../scss
+SASS = ../../node_modules/.bin/sass
+YUI = ../../node_modules/.bin/yuicompressor
 TEMPLATE_SRCS = $(wildcard ../scss/blocks/*.scss ../scss/system/*/*.scss)
 TEMPLATE_SRCS += $(wildcard ../scss/tools/*.scss ../scss/tools/*/*.scss)
 TEMPLATE_SRCS += $(wildcard ../scss/vendor/*.scss ../scss/vendor/*/*.scss)
@@ -14,10 +16,10 @@ user.css user.min.css user.min.css.gz
 	gzip -k $<
 
 %.min.css: %.css
-	yui-compressor --type=css $< > $@
+	$(YUI) --type=css $< > $@
 
 %.css: %.scss
-	sass $< > $@
+	$(SASS) $< > $@
 
 .PHONY: global
 .DELETE_ON_ERROR: $(ALL)

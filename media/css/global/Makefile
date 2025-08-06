@@ -1,3 +1,5 @@
+SASS = ../../../node_modules/.bin/sass
+YUI = ../../../node_modules/.bin/yuicompressor
 VPATH = ../../scss/global:../../scss/tools
 TEMPLATE_SRCS = $(wildcard ../../scss/tools/*.scss ../../scss/tools/*/*.scss)
 
@@ -27,11 +29,11 @@ colors_alternative.min.css.gz
 
 %.min.css: %.css
 	$(RM) $@
-	yui-compressor --type=css $< > $@
+	$(YUI) --type=css $< > $@
 
 %.css: %.scss
 	$(RM) $@
-	sass $< > $@
+	$(SASS) $< > $@
 
 .PHONY: clean
 .DELETE_ON_ERROR: $(ALL)

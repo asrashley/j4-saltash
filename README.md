@@ -17,6 +17,14 @@ Building this template requires:
 * make
 * zip
 
+One-time setup of sass and yuicompressor:
+
+```sh
+nvm use
+npm ci
+```
+
+To create a ZIP package:
 ```sh
 make
 make zip
