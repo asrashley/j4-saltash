@@ -1,4 +1,9 @@
 media/scss/.sass-cache/
 media/css/.sass-cache
+images/favicon-settings.json
+images/Makefile
+images/output-data.json
+images/icons/.git-empty
+images/Icon.svg
 *.scssc
 **/.sass-cache

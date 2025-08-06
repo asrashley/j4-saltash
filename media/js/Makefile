@@ -1,3 +1,5 @@
+SASS = ../../node_modules/.bin/sass
+YUI = ../../node_modules/.bin/yuicompressor
 
 ALL = \
 template.min.js template.min.js.gz \
@@ -9,7 +11,7 @@ user.min.js user.min.js.gz
 
 %.min.js: %.js
 	$(RM) $@
-	yui-compressor --type=js $< > $@
+	$(YUI) --type=js $< > $@
 
 .PHONY: clean
 .DELETE_ON_ERROR: $(ALL)

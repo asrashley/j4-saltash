@@ -1,25 +1,25 @@
 {
   "$schema": "https://developer.joomla.org/schemas/json-schema/web_assets.json",
-  "name": "garibaldi",
+  "name": "saltash",
   "version": "4.0.0",
-  "description": "This file contains details of the assets used by the Garibaldi template",
+  "description": "This file contains details of the assets used by the Saltash template",
   "license": "GPL-2.0-or-later",
   "assets": [
     {
-      "name": "template.garibaldi.ltr",
+      "name": "template.saltash.ltr",
       "description": "The css file to be used when the site is left to right (LTR).",
       "type": "style",
-      "uri": "media/templates/site/garibaldi/css/template.css",
+      "uri": "media/templates/site/saltash/css/template.css",
       "dependencies": [
         "fontawesome",
         "searchtools"
       ]
     },
     {
-      "name": "template.garibaldi.rtl",
+      "name": "template.saltash.rtl",
       "description": "The css file to be used when the site is right to left (RTL).",
       "type": "style",
-      "uri": "media/templates/site/garibaldi/css/template-rtl.css",
+      "uri": "media/templates/site/saltash/css/template-rtl.css",
       "dependencies": [
         "fontawesome"
       ]
@@ -44,17 +44,17 @@
       "name": "template.user",
       "description": "A file where a user can add their own css.",
       "type": "style",
-      "uri": "media/templates/site/garibaldi/css/user.css",
+      "uri": "media/templates/site/saltash/css/user.css",
       "dependencies": [
         "template.active",
         "template.active.language"
       ]
     },
     {
-      "name": "template.garibaldi",
+      "name": "template.saltash",
       "description": "The file containing the javascript for this template.",
       "type": "script",
-      "uri": "media/templates/site/garibaldi/js/template.js",
+      "uri": "media/templates/site/saltash/js/template.js",
       "attributes": {
         "defer": true
       },
@@ -68,38 +68,38 @@
       "type": "script",
       "uri": "",
       "dependencies": [
-        "template.garibaldi"
+        "template.saltash"
       ]
     },
     {
       "name": "template.user",
       "description": "The name of a file where a user can add their own javascript",
       "type": "script",
-      "uri": "media/templates/site/garibaldi/js/user.js",
+      "uri": "media/templates/site/saltash/js/user.js",
       "dependencies": [
         "template.active"
       ]
     },
     {
-      "name": "template.garibaldi.ltr",
+      "name": "template.saltash.ltr",
       "type": "preset",
       "dependencies": [
-        "template.garibaldi.ltr#style",
-        "template.garibaldi#script"
+        "template.saltash.ltr#style",
+        "template.saltash#script"
       ]
     },
     {
-      "name": "template.garibaldi.rtl",
+      "name": "template.saltash.rtl",
       "type": "preset",
       "dependencies": [
-        "template.garibaldi.rtl#style",
-        "template.garibaldi#script"
+        "template.saltash.rtl#style",
+        "template.saltash#script"
       ]
     },
     {
       "name": "searchtools",
       "type": "style",
-      "uri": "media/templates/site/garibaldi/css/system/searchtools/searchtools.css"
+      "uri": "media/templates/site/saltash/css/system/searchtools/searchtools.css"
     },
     {
       "name": "fontawesome",
@@ -109,22 +109,22 @@
     {
       "name": "template.font.noto",
       "type": "style",
-      "uri": "media/templates/site/garibaldi/css/global/fonts-noto.css"
+      "uri": "media/templates/site/saltash/css/global/fonts-noto.css"
     },
     {
       "name": "template.font.playfair",
       "type": "style",
-      "uri": "media/templates/site/garibaldi/css/global/fonts-playfair.css"
+      "uri": "media/templates/site/saltash/css/global/fonts-playfair.css"
     },
     {
       "name": "template.font.roboto",
       "type": "style",
-      "uri": "media/templates/site/garibaldi/css/global/fonts-roboto.css"
+      "uri": "media/templates/site/saltash/css/global/fonts-roboto.css"
     },
     {
       "name": "template.font.sanchez",
       "type": "style",
-      "uri": "media/templates/site/garibaldi/css/global/fonts-sanchez.css"
+      "uri": "media/templates/site/saltash/css/global/fonts-sanchez.css"
     }
   ]
 }

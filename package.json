@@ -1,0 +1,18 @@
+{
+  "name": "j4-saltash",
+  "version": "0.0.2",
+  "description": "A simple Joomla 4 template",
+  "repository": "github:asrashley/j4-saltash",
+  "license": "GPL-2.0",
+  "engines": {
+    "node": ">=20.0.0",
+    "npm": ">=10.0.0"
+  },
+  "devDependencies": {
+    "@realfavicongenerator/generate-favicon": "^0.4.16",
+    "@realfavicongenerator/image-adapter-node": "^0.4.16",
+    "realfavicon": "^0.4.18",
+    "sass": "^1.90.0",
+    "yuicompressor": "^2.4.8"
+  }
+}

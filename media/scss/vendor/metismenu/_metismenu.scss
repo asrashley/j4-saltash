@@ -30,7 +30,7 @@
         display: flex;
         flex-wrap: wrap;
         align-items: center;
-        padding: ($garibaldi-grid-gutter/2) $garibaldi-grid-gutter;
+        padding: ($saltash-grid-gutter/2) $saltash-grid-gutter;
         font-size: 1.1rem;
         line-height: 1.5;
 
@@ -111,7 +111,7 @@
       .mm-collapse {
         position: absolute;
         background-color: hsl(0, 0%, 100%);
-        box-shadow: $garibaldi-box-shadow;
+        box-shadow: $saltash-box-shadow;
 
         &:not(.mm-show) {
           display: none;
@@ -137,9 +137,9 @@
           > ul {
             position: relative;
             top: 0;
-            flex-basis: calc(100% + #{$garibaldi-grid-gutter});
-            margin-top: ($garibaldi-grid-gutter/2);
-            margin-bottom: ($garibaldi-grid-gutter/-2);
+            flex-basis: calc(100% + #{$saltash-grid-gutter});
+            margin-top: ($saltash-grid-gutter/2);
+            margin-bottom: ($saltash-grid-gutter/-2);
             background-color: hsla(0, 0%, 0%, .03);
             box-shadow: none;
           }

@@ -28,16 +28,16 @@
 
 .header {
   position: relative;
-  padding: $garibaldi-grid-gutter ($garibaldi-grid-gutter*2);
+  padding: $saltash-grid-gutter ($saltash-grid-gutter*2);
   margin: 0;
   color: $white;
   text-align: center;
-  background-color: var(--garibaldi-color-primary);
-  background-image: $garibaldi-header-grad;
+  background-color: var(--saltash-color-primary);
+  background-image: $saltash-header-grad;
   border-radius: 5px 5px 0 0;
 
   [dir=rtl] & {
-    background-image: $garibaldi-header-grad-rtl;
+    background-image: $saltash-header-grad-rtl;
   }
 }
 

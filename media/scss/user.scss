@@ -12,8 +12,8 @@
 }
 
 :root {
-  --garibaldi-font-weight-headings: 400;
-  --garibaldi-font-weight-normal: 400;
+  --saltash-font-weight-headings: 400;
+  --saltash-font-weight-normal: 400;
 }
 
 /* left hand column on every page */
@@ -73,7 +73,7 @@
     }
 
     .site-description {
-      font-family: var(--garibaldi-font-family-body);
+      font-family: var(--saltash-font-family-body);
       font-size: 1.25rem;
 
       @include media-breakpoint-down(md) {
@@ -210,13 +210,28 @@ body.wrapper-fluid .site-grid .container-sidebar-left {
 
 /* jevents */
 #jevents {
-  #jevents_header .contentheading {
-    display: none;
+  #jevents_header {
+    /*.contentheading {
+      display: none;
+    }*/
+    .actions .icon-print {
+      width: 1.5rem;
+    }
   }
 
   #jevents_body {
     #cal_title {
-      opacity: 0;
+      font-size: 1.5rem;
+    }
+
+    .ev_navigation {
+      .vtop > td {
+        min-width: 2rem;
+
+        a > img {
+          width: 100%;
+        }
+      }
     }
 
     .ev_table {
@@ -236,7 +251,7 @@ body.wrapper-fluid .site-grid .container-sidebar-left {
     }
 
     .jev_evdt {
-      background-color: var(--garibaldi-wall-colour);
+      background-color: var(--saltash-wall-colour);
       border: 1px solid black;
       border-radius: 1em;
       overflow: hidden;
@@ -247,7 +262,7 @@ body.wrapper-fluid .site-grid .container-sidebar-left {
       }
 
       .jev_evdt_header {
-        background-color: var(--garibaldi-woodwork-colour);
+        background-color: var(--saltash-woodwork-colour);
         color: var(--light);
         padding: 0 1em;
         position: relative;
@@ -276,6 +291,14 @@ body.wrapper-fluid .site-grid .container-sidebar-left {
       border-radius: 1em;
       border-spacing: 0;
       overflow: hidden;
+
+      .cal_td_daysnames {
+        padding: 1px 0.7em;
+      }
+
+      .cal_td_weeklink {
+        text-align: center;
+      }
     }
   }
 }
@@ -356,7 +379,7 @@ body.wrapper-fluid .site-grid .container-sidebar-left {
 
     .pg-category-box-title {
       background-color: inherit;
-      @include gradient-y(rgba($gray-300, 0.2), rgba($garibaldi-wall-colour, 0.4));
+      @include gradient-y(rgba($gray-300, 0.2), rgba($saltash-wall-colour, 0.4));
 
       .ph-si-category,
       .pg-category-box-count {
@@ -365,9 +388,18 @@ body.wrapper-fluid .site-grid .container-sidebar-left {
       }
 
       &>a {
-        color: var(--garibaldi-color-link);
+        color: var(--saltash-color-link);
         text-decoration: none;
       }
+    }
+
+    .pg-category-box-image {
+        height: 12rem;
+        width: 12rem;
+        img {
+            height: 100%;
+            width: 100%;
+        }
     }
   }
 }

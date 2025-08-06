@@ -1,16 +1,16 @@
 // Global
-$garibaldi-wall-colour: lighten(#deccb4, 5%);
-$garibaldi-woodwork-colour: #938c6f;
+$saltash-wall-colour: lighten(#deccb4, 5%);
+$saltash-woodwork-colour: #938c6f;
 
-$garibaldi-container-main-bg: hsl(0, 0%, 95%) !default;
-$garibaldi-border-color: hsl(210, 14%, 89%) !default;
-$garibaldi-box-shadow: 1px 1px 4px hsla(0, 0%, 0%, .1) !default;
-$garibaldi-block-header-bg: #001 !default;
-$garibaldi-block-header-alt: #253045 !default;
-$garibaldi-header-colour: gold;
-$garibaldi-header-grad: linear-gradient(135deg, $garibaldi-block-header-bg 0%, $garibaldi-block-header-alt 100%);
-$garibaldi-header-grad-rtl: linear-gradient(135deg, $garibaldi-block-header-alt 0%, $garibaldi-block-header-bg 100%);
-$garibaldi-inverted-text-color: var(--garibaldi-color-hover);
+$saltash-container-main-bg: hsl(0, 0%, 95%) !default;
+$saltash-border-color: hsl(210, 14%, 89%) !default;
+$saltash-box-shadow: 1px 1px 4px hsla(0, 0%, 0%, .1) !default;
+$saltash-block-header-bg: #001 !default;
+$saltash-block-header-alt: #253045 !default;
+$saltash-header-colour: gold;
+$saltash-header-grad: linear-gradient(135deg, $saltash-block-header-bg 0%, $saltash-block-header-alt 100%);
+$saltash-header-grad-rtl: linear-gradient(135deg, $saltash-block-header-alt 0%, $saltash-block-header-bg 100%);
+$saltash-inverted-text-color: var(--saltash-color-hover);
 
 // Remove prefix added in BS5 for compat with Joomla beta's shipped with Betas
 $variable-prefix: "";
@@ -18,9 +18,9 @@ $variable-prefix: "";
 // Color system
 
 // Standard
-$standard-color-primary: $garibaldi-wall-colour;
+$standard-color-primary: $saltash-wall-colour;
 $standard-color-link: hsl(207, 49%, 37%);
-$standard-color-hover: $garibaldi-wall-colour;
+$standard-color-hover: $saltash-wall-colour;
 
 // Alternative
 $alternative-color-primary: hsl(351, 54%, 37%);
@@ -76,7 +76,7 @@ $colors: (
   "white": $white
 );
 
-$primary: var(--garibaldi-color-primary);
+$primary: var(--saltash-color-primary);
 $primaryBS: $blue;
 $secondary: $gray-600;
 $success: $green;
@@ -144,15 +144,15 @@ $colors: (
 );
 
 // Links
-$link-color: var(--garibaldi-color-link);
-$link-hover-color: var(--garibaldi-color-hover);
+$link-color: var(--saltash-color-link);
+$link-hover-color: var(--saltash-color-hover);
 
 // Breadcrumbs
 $breadcrumb-active-color: $gray-700;
 
 // Grid columns
 $grid-gutter-width: 1em !default;
-$garibaldi-grid-gutter: $grid-gutter-width;
+$saltash-grid-gutter: $grid-gutter-width;
 
 // Components
 $fa-font-path: "../../../media/vendor/fontawesome-free/webfonts";
@@ -164,11 +164,11 @@ $treeselect-line-height: 2.2rem;
 $metismenu: true !default;
 
 // Toolbar
-$garibaldi-toolbar-line-height: 1.8rem;
+$saltash-toolbar-line-height: 1.8rem;
 
 // Typography
 $font-family-sans-serif: -apple-system, BlinkMacSystemFont, "Segoe UI", Roboto, "Helvetica Neue", Arial, "Noto Sans", sans-serif, "Apple Color Emoji", "Segoe UI Emoji", "Segoe UI Symbol", "Noto Color Emoji" !default;
-$font-family-base: var(--garibaldi-font-family-body, $font-family-sans-serif);
+$font-family-base: var(--saltash-font-family-body, $font-family-sans-serif);
 
 // Icons
 $jicon-css-prefix: icon !default;
@@ -198,7 +198,7 @@ $input-btn-padding-x: 1rem;
 $input-max-width: 100%;
 $input-focus-border-color: tint-color($standard-color-primary, 50%);
 
-$garibaldi-input-focus-shadow: 0 0 0 .2rem hsla(0, 0%, 0%, .1);
+$saltash-input-focus-shadow: 0 0 0 .2rem hsla(0, 0%, 0%, .1);
 
 $form-select-indicator-padding: 3rem;
 $form-select-bg: $gray-200;
@@ -233,20 +233,20 @@ $zindex-mobile-menu: 9000;
 $nav-link-padding-y: .5rem;
 
 // Navs
-$garibaldi-tabs-header-bg: $garibaldi-block-header-bg;
-$garibaldi-tabs-active-bg: hsla(0, 0%, 0%, .3);
-$garibaldi-tabs-active-highlight: $primaryBS;
+$saltash-tabs-header-bg: $saltash-block-header-bg;
+$saltash-tabs-active-bg: hsla(0, 0%, 0%, .3);
+$saltash-tabs-active-highlight: $primaryBS;
 
 // Navbar
 $nav-link-height: 1.5rem + $nav-link-padding-y * 2;
 
 // Cards
-$garibaldi-card-title-bg: $garibaldi-block-header-bg;
-$garibaldi-card-title-icon-bg: $garibaldi-block-header-bg;
-$garibaldi-card-title-icon-bg-hover: scale-color($garibaldi-card-title-bg, $lightness: 2%);
+$saltash-card-title-bg: $saltash-block-header-bg;
+$saltash-card-title-icon-bg: $saltash-block-header-bg;
+$saltash-card-title-icon-bg-hover: scale-color($saltash-card-title-bg, $lightness: 2%);
 $card-bg-color-light: $gray-100;
-$card-bg-color-dark: var(--garibaldi-color-primary);
-$card-border-color: $garibaldi-border-color;
+$card-bg-color-dark: var(--saltash-color-primary);
+$card-border-color: $saltash-border-color;
 
 // Badges
 $badge-default-bg: $gray-600;

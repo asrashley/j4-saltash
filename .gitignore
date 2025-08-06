@@ -1,4 +1,9 @@
 .sass-cache
+images/icons/*.ico
+images/icons/*.png
+images/icons/*.svg
+images/icons/site.webmanifest
+images/output-data.json
 media/css/editor*
 media/css/offline*
 media/css/template*
@@ -7,4 +12,5 @@ media/css/global/fonts-*.css*
 media/css/global/colors_*.css*
 media/css/vendor/choicesjs/choices*
 media/js/user.min.js*
-garibaldi.zip
+saltash.zip
+node_modules

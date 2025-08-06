@@ -4,12 +4,12 @@
   position: relative;
   z-index: 10;
   background-color: #333;
-  background-image: $garibaldi-header-grad;
+  background-image: $saltash-header-grad;
   box-shadow: 0 5px 5px hsla(0, 0%, 0%, .03) inset;
   display: grid;
   grid-template-columns: auto 12rem;
-  column-gap: ($garibaldi-grid-gutter / 2);
-  row-gap: ($garibaldi-grid-gutter / 2);
+  column-gap: ($saltash-grid-gutter / 2);
+  row-gap: ($saltash-grid-gutter / 2);
 
   @include media-breakpoint-down(lg) {
     position: relative !important;
@@ -26,7 +26,7 @@
 
   nav {
     padding: 0;
-    margin-top: $garibaldi-grid-gutter / 2;
+    margin-top: $saltash-grid-gutter / 2;
   }
 
   .site-description {
@@ -48,7 +48,7 @@
     }
 
     .brand-img {
-      background-image: var(--garibaldi-branding-img);
+      background-image: var(--saltash-branding-img);
       background-repeat: no-repeat;
       background-size: contain;
       float: left;
@@ -70,12 +70,12 @@
     }
 
     .brand-logo {
-      color: $garibaldi-header-colour;
-      font-family: var(--garibaldi-font-family-branding);
+      color: $saltash-header-colour;
+      font-family: var(--saltash-font-family-branding);
     }
 
     .site-description {
-      color: $garibaldi-header-colour;
+      color: $saltash-header-colour;
     }
   }
 
@@ -104,13 +104,13 @@
     grid-row: 2;
     flex-wrap: wrap;
     justify-content: space-between;
-    padding-bottom: $garibaldi-grid-gutter;
+    padding-bottom: $saltash-grid-gutter;
 
     @include media-breakpoint-down(md) {
 
       .container-search,
       nav {
-        margin-top: $garibaldi-grid-gutter;
+        margin-top: $saltash-grid-gutter;
       }
     }
 
@@ -271,7 +271,7 @@
   }
 
   .container-search {
-    margin-top: $garibaldi-grid-gutter / 2;
+    margin-top: $saltash-grid-gutter / 2;
   }
 
   .mod-finder {

@@ -2,7 +2,7 @@
 
 /**
  * @package     Joomla.Site
- * @subpackage  Templates.garibaldi
+ * @subpackage  Templates.saltash
  *
  * @copyright   (C) 2017 Open Source Matters, Inc. <https://www.joomla.org>
  * @license     GNU General Public License version 2 or later; see LICENSE.txt
@@ -21,7 +21,11 @@ $app   = Factory::getApplication();
 $input = $app->getInput();
 $wa    = $this->getWebAssetManager();
 
-$this->addHeadLink(HTMLHelper::_('image', 'favicon.ico', '', [], true, 1), 'alternate icon', 'rel', ['type' => 'image/vnd.microsoft.icon']);
+$this->addHeadLink(HTMLHelper::_('image', 'icons/apple-touch-icon.png', '', [], true, 1), 'apple-touch-icon', 'rel', ['sizes' => '180x180']);
+$this->addHeadLink(HTMLHelper::_('image', 'icons/favicon-96x96.png', '', [], true, 1), 'icon', 'rel', ['sizes' => '96x96']);
+$this->addHeadLink(HTMLHelper::_('image', 'icons/favicon.svg', '', [], true, 1), 'alternate icon', 'rel', ['type' => 'image/svg+xml']);
+$this->addHeadLink(HTMLHelper::_('image', 'icons/favicon.ico', '', [], true, 1), 'alternate icon', 'rel', ['type' => 'image/vnd.microsoft.icon']);
+$this->addHeadLink(HTMLHelper::_('image', 'icons/site.webmanifest', '', [], true, 1), 'manifest', 'rel', []);
 
 // Detecting Active Variables
 $option   = $input->getCmd('option', '');
@@ -33,7 +37,6 @@ $sitename = htmlspecialchars($app->get('sitename') ?? '', ENT_QUOTES, 'UTF-8');
 $menu     = $app->getMenu()->getActive();
 $pageclass = $menu !== null ? $menu->getParams()->get('pageclass_sfx', '') : '';
 $siteCopyright = htmlspecialchars($this->params->get('siteCopyright') ?? '', ENT_QUOTES, 'UTF-8');
-//$templatePath = 'templates/' . $this->template;
 
 // Color Theme
 $paramsColorName = $this->params->get('colorName', 'colors_standard');
@@ -41,11 +44,11 @@ $paramsBrandingFont = $this->params->get('brandingFont', 'sans-serif');
 $paramsHeaderFont = $this->params->get('headerFont', 'sans-serif');
 $paramsBodyFont = $this->params->get('bodyFont', 'sans-serif');
 $assetColorName  = 'theme.' . $paramsColorName;
-$wa->registerAndUseStyle($assetColorName, 'media/templates/site/garibaldi/css/global/' . $paramsColorName . '.css');
+$wa->registerAndUseStyle($assetColorName, 'media/templates/site/saltash/css/global/' . $paramsColorName . '.css');
 
-$fontStyles       = '--garibaldi-font-family-branding: ' . $paramsBrandingFont . ';
---garibaldi-font-family-headings:' . $paramsHeaderFont . ';
---garibaldi-font-family-body:' . $paramsBodyFont . ';';
+$fontStyles       = '--saltash-font-family-branding: ' . $paramsBrandingFont . ';
+--saltash-font-family-headings:' . $paramsHeaderFont . ';
+--saltash-font-family-body:' . $paramsBodyFont . ';';
 
 if ($this->params->get('logoFile')) {
     $logoUrl = Uri::root(false) . htmlspecialchars($this->params->get('logoFile'), ENT_QUOTES);
@@ -70,7 +73,7 @@ if ($this->params->get('loadSanchezFont')) {
 }
 
 // Enable assets
-$wa->usePreset('template.garibaldi.' . ($this->direction === 'rtl' ? 'rtl' : 'ltr'))
+$wa->usePreset('template.saltash.' . ($this->direction === 'rtl' ? 'rtl' : 'ltr'))
     ->useStyle('template.active.language')
     ->useStyle('template.user')
     ->useScript('template.user')
@@ -81,12 +84,12 @@ $wa->usePreset('template.garibaldi.' . ($this->direction === 'rtl' ? 'rtl' : 'lt
         --template-text-light: #ffffff;
         --template-link-color: #2a69b8;
         --template-special-color: #001B4C;
-        --garibaldi-branding-img: url($logoUrl);
+        --saltash-branding-img: url($logoUrl);
         $fontStyles
     }");
 
 // Override 'template.active' asset to set correct ltr/rtl dependency
-$wa->registerStyle('template.active', '', [], [], ['template.garibaldi.' . ($this->direction === 'rtl' ? 'rtl' : 'ltr')]);
+$wa->registerStyle('template.active', '', [], [], ['template.saltash.' . ($this->direction === 'rtl' ? 'rtl' : 'ltr')]);
 
 $hasClass = '';
 
@@ -125,7 +128,7 @@ $stickyHeader = $this->params->get('stickyHeader') ? 'position-sticky sticky-top
     . ($this->direction == 'rtl' ? ' rtl' : '');
 ?>">
     <header class="header container-header full-width<?php echo $stickyHeader ? ' ' . $stickyHeader : ''; ?>">
-        
+
         <?php if ($this->countModules('topbar')) : ?>
             <div class="container-topbar">
             <jdoc:include type="modules" name="topbar" style="none" />
@@ -157,7 +160,7 @@ $stickyHeader = $this->params->get('stickyHeader') ? 'position-sticky sticky-top
                 </div>
            </div>
         <?php endif; ?>
- 
+
         <?php if ($this->countModules('menu', true) || $this->countModules('search', true)) : ?>
             <div class="grid-child container-nav">
                 <?php if ($this->countModules('menu', true)) : ?>
@@ -245,7 +248,7 @@ $stickyHeader = $this->params->get('stickyHeader') ? 'position-sticky sticky-top
     </footer>
 
     <?php if ($this->params->get('backTop') == 1) : ?>
-        <a href="#top" id="back-top" class="back-to-top-link" aria-label="<?php echo Text::_('TPL_GARIBALDI_BACKTOTOP'); ?>">
+        <a href="#top" id="back-top" class="back-to-top-link" aria-label="<?php echo Text::_('TPL_SALTASH_BACKTOTOP'); ?>">
             <span class="icon-arrow-up icon-fw" aria-hidden="true"></span>
         </a>
     <?php endif; ?>
