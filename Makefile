@@ -16,12 +16,15 @@ images \
 media \
 language
 
-.PHONY: media
+.PHONY: media images
 
-all: media
+all: media images
 
 media:
 	$(MAKE) -C media
+
+images:
+	$(MAKE) -C images
 
 zip: saltash.zip
 
@@ -32,6 +35,7 @@ saltash.zip: $(ZIP_CONTENTS)
 clean:
 	$(RM) saltash.zip
 	$(MAKE) -C media clean
+	$(MAKE) -C images clean
 
 deploy:
 	$(CP) *.php $(TEMPLATE_DEST)/

@@ -21,7 +21,11 @@ $app   = Factory::getApplication();
 $input = $app->getInput();
 $wa    = $this->getWebAssetManager();
 
-$this->addHeadLink(HTMLHelper::_('image', 'favicon.ico', '', [], true, 1), 'alternate icon', 'rel', ['type' => 'image/vnd.microsoft.icon']);
+$this->addHeadLink(HTMLHelper::_('image', 'icons/apple-touch-icon.png', '', [], true, 1), 'apple-touch-icon', 'rel', ['sizes' => '180x180']);
+$this->addHeadLink(HTMLHelper::_('image', 'icons/favicon-96x96.png', '', [], true, 1), 'icon', 'rel', ['sizes' => '96x96']);
+$this->addHeadLink(HTMLHelper::_('image', 'icons/favicon.svg', '', [], true, 1), 'alternate icon', 'rel', ['type' => 'image/svg+xml']);
+$this->addHeadLink(HTMLHelper::_('image', 'icons/favicon.ico', '', [], true, 1), 'alternate icon', 'rel', ['type' => 'image/vnd.microsoft.icon']);
+$this->addHeadLink(HTMLHelper::_('image', 'icons/site.webmanifest', '', [], true, 1), 'manifest', 'rel', []);
 
 // Detecting Active Variables
 $option   = $input->getCmd('option', '');
@@ -33,7 +37,6 @@ $sitename = htmlspecialchars($app->get('sitename') ?? '', ENT_QUOTES, 'UTF-8');
 $menu     = $app->getMenu()->getActive();
 $pageclass = $menu !== null ? $menu->getParams()->get('pageclass_sfx', '') : '';
 $siteCopyright = htmlspecialchars($this->params->get('siteCopyright') ?? '', ENT_QUOTES, 'UTF-8');
-//$templatePath = 'templates/' . $this->template;
 
 // Color Theme
 $paramsColorName = $this->params->get('colorName', 'colors_standard');
@@ -125,7 +128,7 @@ $stickyHeader = $this->params->get('stickyHeader') ? 'position-sticky sticky-top
     . ($this->direction == 'rtl' ? ' rtl' : '');
 ?>">
     <header class="header container-header full-width<?php echo $stickyHeader ? ' ' . $stickyHeader : ''; ?>">
-        
+
         <?php if ($this->countModules('topbar')) : ?>
             <div class="container-topbar">
             <jdoc:include type="modules" name="topbar" style="none" />
@@ -157,7 +160,7 @@ $stickyHeader = $this->params->get('stickyHeader') ? 'position-sticky sticky-top
                 </div>
            </div>
         <?php endif; ?>
- 
+
         <?php if ($this->countModules('menu', true) || $this->countModules('search', true)) : ?>
             <div class="grid-child container-nav">
                 <?php if ($this->countModules('menu', true)) : ?>
