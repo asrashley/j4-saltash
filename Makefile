@@ -3,8 +3,8 @@ CP = cp -f
 TAR = tar
 
 DEST_DIR = ../public_html
-TEMPLATE_DEST = $(DEST_DIR)/templates/garibaldi
-MEDIA_DEST = $(DEST_DIR)/media/templates/site/garibaldi
+TEMPLATE_DEST = $(DEST_DIR)/templates/saltash
+MEDIA_DEST = $(DEST_DIR)/media/templates/site/saltash
 
 ZIP_CONTENTS = \
 *.json \
@@ -23,14 +23,14 @@ all: media
 media:
 	$(MAKE) -C media
 
-zip: garibaldi.zip
+zip: saltash.zip
 
-garibaldi.zip: $(ZIP_CONTENTS)
-	$(RM) garibaldi.zip
-	zip -r garibaldi.zip $(ZIP_CONTENTS) -x@exclude.lst
+saltash.zip: $(ZIP_CONTENTS)
+	$(RM) saltash.zip
+	zip -r saltash.zip $(ZIP_CONTENTS) -x@exclude.lst
 
 clean:
-	$(RM) garibaldi.zip
+	$(RM) saltash.zip
 	$(MAKE) -C media clean
 
 deploy:

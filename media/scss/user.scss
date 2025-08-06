@@ -12,8 +12,8 @@
 }
 
 :root {
-  --garibaldi-font-weight-headings: 400;
-  --garibaldi-font-weight-normal: 400;
+  --saltash-font-weight-headings: 400;
+  --saltash-font-weight-normal: 400;
 }
 
 /* left hand column on every page */
@@ -73,7 +73,7 @@
     }
 
     .site-description {
-      font-family: var(--garibaldi-font-family-body);
+      font-family: var(--saltash-font-family-body);
       font-size: 1.25rem;
 
       @include media-breakpoint-down(md) {
@@ -251,7 +251,7 @@ body.wrapper-fluid .site-grid .container-sidebar-left {
     }
 
     .jev_evdt {
-      background-color: var(--garibaldi-wall-colour);
+      background-color: var(--saltash-wall-colour);
       border: 1px solid black;
       border-radius: 1em;
       overflow: hidden;
@@ -262,7 +262,7 @@ body.wrapper-fluid .site-grid .container-sidebar-left {
       }
 
       .jev_evdt_header {
-        background-color: var(--garibaldi-woodwork-colour);
+        background-color: var(--saltash-woodwork-colour);
         color: var(--light);
         padding: 0 1em;
         position: relative;
@@ -379,7 +379,7 @@ body.wrapper-fluid .site-grid .container-sidebar-left {
 
     .pg-category-box-title {
       background-color: inherit;
-      @include gradient-y(rgba($gray-300, 0.2), rgba($garibaldi-wall-colour, 0.4));
+      @include gradient-y(rgba($gray-300, 0.2), rgba($saltash-wall-colour, 0.4));
 
       .ph-si-category,
       .pg-category-box-count {
@@ -388,7 +388,7 @@ body.wrapper-fluid .site-grid .container-sidebar-left {
       }
 
       &>a {
-        color: var(--garibaldi-color-link);
+        color: var(--saltash-color-link);
         text-decoration: none;
       }
     }

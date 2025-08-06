@@ -1,12 +1,12 @@
 <?xml version="1.0" encoding="utf-8"?>
 <extension type="template" client="site">
-    <name>garibaldi</name>
+    <name>saltash</name>
     <version>1.0</version>
     <creationDate>February 2017</creationDate>
     <author>Joomla! Project</author>
     <authorEmail>admin@joomla.org</authorEmail>
     <copyright>(C) 2017 Open Source Matters, Inc.</copyright>
-    <description>TPL_GARIBALDI_XML_DESCRIPTION</description>
+    <description>TPL_SALTASH_XML_DESCRIPTION</description>
     <files>
         <filename>component.php</filename>
         <filename>error.php</filename>
@@ -18,7 +18,7 @@
         <filename>template_thumbnail.png</filename>
         <folder>html</folder>
     </files>
-    <media destination="templates/site/garibaldi" folder="media">
+    <media destination="templates/site/saltash" folder="media">
             <folder>css</folder>
             <folder>images</folder>
             <folder>js</folder>
@@ -46,8 +46,8 @@
         <position>debug</position>
     </positions>
     <languages folder="language">
-        <language tag="en-GB">en-GB/tpl_garibaldi.ini</language>
-        <language tag="en-GB">en-GB/tpl_garibaldi.sys.ini</language>
+        <language tag="en-GB">en-GB/tpl_saltash.ini</language>
+        <language tag="en-GB">en-GB/tpl_saltash.sys.ini</language>
     </languages>
     <config>
         <fields name="params">
@@ -55,7 +55,7 @@
                 <field
                     name="brand"
                     type="radio"
-                    label="TPL_GARIBALDI_BRAND_LABEL"
+                    label="TPL_SALTASH_BRAND_LABEL"
                     default="1"
                     layout="joomla.form.field.radio.switcher"
                     filter="boolean"
@@ -68,7 +68,7 @@
                     name="logoFile"
                     type="media"
                     default=""
-                    label="TPL_GARIBALDI_LOGO_LABEL"
+                    label="TPL_SALTASH_LOGO_LABEL"
                     showon="brand:1"
                 />
 
@@ -76,7 +76,7 @@
                     name="siteTitle"
                     type="text"
                     default=""
-                    label="TPL_GARIBALDI_TITLE"
+                    label="TPL_SALTASH_TITLE"
                     filter="string"
                     showon="brand:1"
                 />
@@ -85,7 +85,7 @@
                     name="siteDescription"
                     type="text"
                     default=""
-                    label="TPL_GARIBALDI_TAGLINE"
+                    label="TPL_SALTASH_TAGLINE"
                     filter="string"
                     showon="brand:1"
                 />
@@ -94,7 +94,7 @@
                     name="siteCopyright"
                     type="text"
                     default=""
-                    label="TPL_GARIBALDI_COPYRIGHT"
+                    label="TPL_SALTASH_COPYRIGHT"
                     filter="string"
                     showon="brand:1"
                 />
@@ -102,7 +102,7 @@
                 <field
                     name="noteFontScheme"
                     type="note"
-                    description="TPL_GARIBALDI_FONT_NOTE_TEXT"
+                    description="TPL_SALTASH_FONT_NOTE_TEXT"
                     class="alert alert-warning"
                 />
 
@@ -110,16 +110,16 @@
                     name="colorName"
                     type="list"
                     default="colors_standard"
-                    label="TPL_GARIBALDI_COLOR_NAME_LABEL"
+                    label="TPL_SALTASH_COLOR_NAME_LABEL"
                     >
-                    <option value="colors_standard">TPL_GARIBALDI_COLOR_NAME_STANDARD</option>
-                    <option value="colors_alternative">TPL_GARIBALDI_COLOR_NAME_ALTERNATIVE</option>
+                    <option value="colors_standard">TPL_SALTASH_COLOR_NAME_STANDARD</option>
+                    <option value="colors_alternative">TPL_SALTASH_COLOR_NAME_ALTERNATIVE</option>
                 </field>
 
                 <field
                     name="loadNotoFont"
                     type="radio"
-                    label="TPL_GARIBALDI_LOAD_FONT_NOTO"
+                    label="TPL_SALTASH_LOAD_FONT_NOTO"
                     layout="joomla.form.field.radio.switcher"
                     default="0"
                     filter="integer"
@@ -131,7 +131,7 @@
                 <field
                     name="loadPlayfairFont"
                     type="radio"
-                    label="TPL_GARIBALDI_LOAD_FONT_PLAYFAIR"
+                    label="TPL_SALTASH_LOAD_FONT_PLAYFAIR"
                     layout="joomla.form.field.radio.switcher"
                     default="0"
                     filter="integer"
@@ -143,7 +143,7 @@
                 <field
                     name="loadRobotoFont"
                     type="radio"
-                    label="TPL_GARIBALDI_LOAD_FONT_ROBOTO"
+                    label="TPL_SALTASH_LOAD_FONT_ROBOTO"
                     layout="joomla.form.field.radio.switcher"
                     default="0"
                     filter="integer"
@@ -155,7 +155,7 @@
                 <field
                     name="loadSanchezFont"
                     type="radio"
-                    label="TPL_GARIBALDI_LOAD_FONT_SANCHEZ"
+                    label="TPL_SALTASH_LOAD_FONT_SANCHEZ"
                     layout="joomla.form.field.radio.switcher"
                     default="0"
                     filter="integer"
@@ -168,36 +168,36 @@
                     name="brandingFont"
                     type="list"
                     default="'Playfair Display', serif"
-                    label="TPL_GARIBALDI_BRANDING_FONT_LABEL"
+                    label="TPL_SALTASH_BRANDING_FONT_LABEL"
                     >
-                    <option value="'Playfair Display', serif">TPL_GARIBALDI_FONT_PLAYFAIR</option>
-                    <option value="'Roboto', sans-serif">TPL_GARIBALDI_FONT_ROBOTO</option>
-                    <option value="'Noto Sans', sans-serif">TPL_GARIBALDI_FONT_NOTO</option>
-                    <option value="'Sanchez', serif">TPL_GARIBALDI_FONT_SANCHEZ</option>
+                    <option value="'Playfair Display', serif">TPL_SALTASH_FONT_PLAYFAIR</option>
+                    <option value="'Roboto', sans-serif">TPL_SALTASH_FONT_ROBOTO</option>
+                    <option value="'Noto Sans', sans-serif">TPL_SALTASH_FONT_NOTO</option>
+                    <option value="'Sanchez', serif">TPL_SALTASH_FONT_SANCHEZ</option>
                 </field>
 
                 <field
                     name="headerFont"
                     type="list"
                     default="'Playfair Display', serif"
-                    label="TPL_GARIBALDI_HEADER_FONT_LABEL"
+                    label="TPL_SALTASH_HEADER_FONT_LABEL"
                     >
-                    <option value="'Playfair Display', serif">TPL_GARIBALDI_FONT_PLAYFAIR</option>
-                    <option value="'Roboto', sans-serif">TPL_GARIBALDI_FONT_ROBOTO</option>
-                    <option value="'Noto Sans', sans-serif">TPL_GARIBALDI_FONT_NOTO</option>
-                    <option value="'Sanchez', serif">TPL_GARIBALDI_FONT_SANCHEZ</option>
+                    <option value="'Playfair Display', serif">TPL_SALTASH_FONT_PLAYFAIR</option>
+                    <option value="'Roboto', sans-serif">TPL_SALTASH_FONT_ROBOTO</option>
+                    <option value="'Noto Sans', sans-serif">TPL_SALTASH_FONT_NOTO</option>
+                    <option value="'Sanchez', serif">TPL_SALTASH_FONT_SANCHEZ</option>
                 </field>
 
                 <field
                     name="bodyFont"
                     type="list"
                     default="'Noto Sans', sans-serif"
-                    label="TPL_GARIBALDI_BODY_FONT_LABEL"
+                    label="TPL_SALTASH_BODY_FONT_LABEL"
                     >
-                    <option value="'Playfair Display', serif">TPL_GARIBALDI_FONT_PLAYFAIR</option>
-                    <option value="'Roboto', sans-serif">TPL_GARIBALDI_FONT_ROBOTO</option>
-                    <option value="'Noto Sans', sans-serif">TPL_GARIBALDI_FONT_NOTO</option>
-                    <option value="'Sanchez', serif">TPL_GARIBALDI_FONT_SANCHEZ</option>
+                    <option value="'Playfair Display', serif">TPL_SALTASH_FONT_PLAYFAIR</option>
+                    <option value="'Roboto', sans-serif">TPL_SALTASH_FONT_ROBOTO</option>
+                    <option value="'Noto Sans', sans-serif">TPL_SALTASH_FONT_NOTO</option>
+                    <option value="'Sanchez', serif">TPL_SALTASH_FONT_SANCHEZ</option>
                 </field>
 
                 <field
@@ -205,16 +205,16 @@
                     type="radio"
                     layout="joomla.form.field.radio.switcher"
                     default="0"
-                    label="TPL_GARIBALDI_FLUID_LABEL"
+                    label="TPL_SALTASH_FLUID_LABEL"
                     >
-                    <option value="0">TPL_GARIBALDI_STATIC</option>
-                    <option value="1">TPL_GARIBALDI_FLUID</option>
+                    <option value="0">TPL_SALTASH_STATIC</option>
+                    <option value="1">TPL_SALTASH_FLUID</option>
                 </field>
 
                 <field
                     name="stickyHeader"
                     type="radio"
-                    label="TPL_GARIBALDI_STICKY_LABEL"
+                    label="TPL_SALTASH_STICKY_LABEL"
                     layout="joomla.form.field.radio.switcher"
                     default="0"
                     filter="integer"
@@ -226,7 +226,7 @@
                 <field
                     name="backTop"
                     type="radio"
-                    label="TPL_GARIBALDI_BACKTOTOP_LABEL"
+                    label="TPL_SALTASH_BACKTOTOP_LABEL"
                     layout="joomla.form.field.radio.switcher"
                     default="0"
                     filter="integer"

@@ -1,15 +1,15 @@
 // Footer
 
 .footer {
-  margin-top: $garibaldi-grid-gutter;
+  margin-top: $saltash-grid-gutter;
   color: $white;
-  background-color: var(--garibaldi-color-primary);
-  background-image: $garibaldi-header-grad;
+  background-color: var(--saltash-color-primary);
+  background-image: $saltash-header-grad;
 
   .grid-child {
     align-items: center;
     justify-content: space-between;
-    padding: 2.5rem ($garibaldi-grid-gutter/2);
+    padding: 2.5rem ($saltash-grid-gutter/2);
   }
 
   a {
@@ -17,7 +17,7 @@
   }
 
   [dir=rtl] & {
-    background-image: $garibaldi-header-grad-rtl;
+    background-image: $saltash-header-grad-rtl;
   }
 
   .mod-menu {
@@ -27,7 +27,7 @@
   @if $metismenu==true {
     .metismenu.mod-menu {
       .mm-collapse {
-        background: var(--garibaldi-color-primary);
+        background: var(--saltash-color-primary);
       }
     }
   }

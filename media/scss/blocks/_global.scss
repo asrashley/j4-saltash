@@ -29,8 +29,8 @@ h3,
 h4,
 h5,
 h6 {
-  font-family: var(--garibaldi-font-family-headings, $font-family-sans-serif);
-  font-weight: var(--garibaldi-font-weight-headings, $font-weight-bold);
+  font-family: var(--saltash-font-family-headings, $font-family-sans-serif);
+  font-weight: var(--saltash-font-weight-headings, $font-weight-bold);
   color: var(--template-contrast);
 }
 
@@ -55,7 +55,7 @@ h6 {
 }
 
 a {
-  color: var(--garibaldi-color-link);
+  color: var(--saltash-color-link);
 
   &:not([class]) {
     text-decoration: underline;
@@ -63,30 +63,30 @@ a {
 
   &:hover,
   &:focus {
-    color: var(--garibaldi-color-hover);
+    color: var(--saltash-color-hover);
   }
 
   &.navbar-brand {
-    color: var(--garibaldi-color-brand);
+    color: var(--saltash-color-brand);
   }
 }
 
 .btn-primary {
-  background-color: var(--garibaldi-color-primary);
-  border-color: var(--garibaldi-color-primary);
+  background-color: var(--saltash-color-primary);
+  border-color: var(--saltash-color-primary);
 
   &:hover,
   &:focus {
-    background-color: var(--garibaldi-color-hover);
-    border-color: var(--garibaldi-color-hover);
+    background-color: var(--saltash-color-hover);
+    border-color: var(--saltash-color-hover);
   }
 }
 
 .btn-group {
-  margin-bottom: $garibaldi-grid-gutter;
+  margin-bottom: $saltash-grid-gutter;
 
   >input {
-    padding: $garibaldi-grid-gutter/2;
+    padding: $saltash-grid-gutter/2;
     border: 1px solid $gray-400;
     @include border-start-radius($border-radius);
     @include border-end-radius(0);
@@ -109,7 +109,7 @@ a {
 }
 
 .com-content-category__pagination {
-  margin-bottom: $garibaldi-grid-gutter;
+  margin-bottom: $saltash-grid-gutter;
 }
 
 small,
@@ -128,7 +128,7 @@ dd {
 }
 
 th dd {
-  font-weight: var(--garibaldi-font-weight-normal, $font-weight-normal);
+  font-weight: var(--saltash-font-weight-normal, $font-weight-normal);
 }
 
 .com-contact__thumbnail {
@@ -148,7 +148,7 @@ th dd {
     dd {
       grid-column-start: 2;
       grid-column-end: 3;
-      padding: 0 0 0 $garibaldi-grid-gutter;
+      padding: 0 0 0 $saltash-grid-gutter;
       margin-bottom: 0;
     }
   }
@@ -158,7 +158,7 @@ th dd {
     grid-template-columns: repeat(4, 1fr);
     grid-template-rows: repeat(4, auto);
     grid-gap: 1rem;
-    margin-bottom: $garibaldi-grid-gutter;
+    margin-bottom: $saltash-grid-gutter;
 
     h3 {
       grid-column: 1 / 5;
@@ -167,7 +167,7 @@ th dd {
     .com-contact__thumbnail {
       grid-column: 3 / 5;
       grid-row: 2 / 5;
-      margin-bottom: $garibaldi-grid-gutter;
+      margin-bottom: $saltash-grid-gutter;
       text-align: right;
     }
 
@@ -184,7 +184,7 @@ th dd {
 
   [dir="rtl"] dl.dl-horizontal {
     dd {
-      padding: 0 $garibaldi-grid-gutter 0 0;
+      padding: 0 $saltash-grid-gutter 0 0;
     }
   }
 
@@ -196,23 +196,23 @@ th dd {
 }
 
 figure {
-  margin: 0 0 ($garibaldi-grid-gutter*2);
+  margin: 0 0 ($saltash-grid-gutter*2);
 
   &.float-start {
-    margin-right: $garibaldi-grid-gutter;
+    margin-right: $saltash-grid-gutter;
   }
 
   &.float-end {
-    margin-left: $garibaldi-grid-gutter;
+    margin-left: $saltash-grid-gutter;
   }
 
   [dir="rtl"] &.float-start {
     margin-right: 0;
-    margin-left: $garibaldi-grid-gutter;
+    margin-left: $saltash-grid-gutter;
   }
 
   [dir="rtl"] &.float-end {
-    margin-right: $garibaldi-grid-gutter;
+    margin-right: $saltash-grid-gutter;
     margin-left: 0;
   }
 }
@@ -238,7 +238,7 @@ meter {
   .pagination {
     justify-content: space-between;
     padding: 0;
-    margin: $garibaldi-grid-gutter 0;
+    margin: $saltash-grid-gutter 0;
 
     li.next:only-child {
       margin-left: auto;
@@ -246,16 +246,16 @@ meter {
 
     [dir="rtl"] &>li.next:only-child {
       margin-right: auto;
-      margin-left: $garibaldi-grid-gutter;
+      margin-left: $saltash-grid-gutter;
     }
   }
 }
 
 .page-link {
-  color: var(--garibaldi-color-link);
+  color: var(--saltash-color-link);
 
   &:hover {
-    color: var(--garibaldi-color-link);
+    color: var(--saltash-color-link);
   }
 }
 

@@ -1,5 +1,5 @@
-# garibaldi
-"Garibaldi" Joomla 4 template
+# saltash
+"Saltash" Joomla 4 template
 
 ## Introduction
 It provides a basic responsive Boostrap 5 template. It requires CSS grid layout support, which is
@@ -23,7 +23,7 @@ make zip
 ```
 
 ## Installation
-Use the standard Joomla install system to install garibaldi.zip
+Use the standard Joomla install system to install saltash.zip
 
 ## Template Options
 ### Basic Options

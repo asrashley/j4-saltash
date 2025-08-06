@@ -86,10 +86,10 @@
 
   .btn-primary:not([href]),
   .btn-success:not([href]) {
-    color: var(--garibaldi-color-link);
+    color: var(--saltash-color-link);
 
     &:hover {
-      color: var(--garibaldi-color-hover);
+      color: var(--saltash-color-hover);
     }
   }
 }
@@ -99,7 +99,7 @@
 }
 
 .modal-title {
-  font-weight: var(--garibaldi-font-weight-normal, $font-weight-normal);
+  font-weight: var(--saltash-font-weight-normal, $font-weight-normal);
   line-height: $modal-header-height;
 }
 

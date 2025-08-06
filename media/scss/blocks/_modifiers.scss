@@ -4,7 +4,7 @@
 
 .error_site {
   .page-header {
-    margin-top: $garibaldi-grid-gutter;
+    margin-top: $saltash-grid-gutter;
   }
 }
 
@@ -13,17 +13,17 @@
 [class*=" container-"] {
   .span-col-2 {
     flex: 0 0 50%;
-    max-width: calc(50% - #{$garibaldi-grid-gutter});
+    max-width: calc(50% - #{$saltash-grid-gutter});
   }
 
   .span-col-3 {
     flex: 0 0 33.333%;
-    max-width: calc(33.333% - #{$garibaldi-grid-gutter});
+    max-width: calc(33.333% - #{$saltash-grid-gutter});
   }
 
   .span-col-4 {
     flex: 0 0 25%;
-    max-width: calc(25% - #{$garibaldi-grid-gutter});
+    max-width: calc(25% - #{$saltash-grid-gutter});
   }
 }
 
@@ -85,9 +85,9 @@
   flex-wrap: wrap;
   width: 100%;
   padding: 0;
-  margin-right: -($garibaldi-grid-gutter / 2);
-  margin-bottom: $garibaldi-grid-gutter;
-  margin-left: -($garibaldi-grid-gutter / 2);
+  margin-right: -($saltash-grid-gutter / 2);
+  margin-bottom: $saltash-grid-gutter;
+  margin-left: -($saltash-grid-gutter / 2);
 
   @include media-breakpoint-up(lg) {
     &.columns-2 {
@@ -113,12 +113,12 @@
 .blog-item {
   display: flex;
   flex-direction: column;
-  padding: 0 ($garibaldi-grid-gutter / 2) $garibaldi-grid-gutter;
+  padding: 0 ($saltash-grid-gutter / 2) $saltash-grid-gutter;
   overflow: hidden;
 
   .boxed & {
     background-color: $white;
-    box-shadow: 0 0 2px hsla(216, 13%, 23%, .1), 0 2px 5px hsla(216, 13%, 23%, .08), 0 5px 15px hsla(216, 13%, 23%, .08), inset 0 3px 0 var(--garibaldi-color-primary);
+    box-shadow: 0 0 2px hsla(216, 13%, 23%, .1), 0 2px 5px hsla(216, 13%, 23%, .08), 0 5px 15px hsla(216, 13%, 23%, .08), inset 0 3px 0 var(--saltash-color-primary);
 
     .item-content {
       padding: 25px;
@@ -181,10 +181,10 @@
 @supports (display: grid) {
   .blog-items {
     display: grid;
-    margin: 0 0 $garibaldi-grid-gutter;
+    margin: 0 0 $saltash-grid-gutter;
     grid-auto-flow: row;
     grid-template-columns: 1fr;
-    grid-gap: $garibaldi-grid-gutter;
+    grid-gap: $saltash-grid-gutter;
 
     .blog-item {
       padding: 0;
@@ -220,11 +220,11 @@
   &[class^="masonry-"],
   &[class*=" masonry-"] {
     display: block;
-    column-gap: $garibaldi-grid-gutter;
+    column-gap: $saltash-grid-gutter;
 
     .blog-item {
       display: inline-flex;
-      margin-bottom: $garibaldi-grid-gutter;
+      margin-bottom: $saltash-grid-gutter;
       page-break-inside: avoid;
       break-inside: avoid;
     }
@@ -287,7 +287,7 @@
       border-top-right-radius: 0;
       @include border-bottom-start-radius($border-radius);
       @include border-bottom-end-radius($border-radius);
-      box-shadow: $garibaldi-box-shadow;
+      box-shadow: $saltash-box-shadow;
 
       figure {
         margin: 0 -1rem 1rem;
@@ -324,7 +324,7 @@
     }
 
     .mod-menu__sub {
-      padding-left: $garibaldi-grid-gutter;
+      padding-left: $saltash-grid-gutter;
     }
   }
 }

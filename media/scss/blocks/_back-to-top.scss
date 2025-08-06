@@ -7,11 +7,11 @@
   right: 1rem;
   bottom: 1rem;
   z-index: 10000;
-  padding: $garibaldi-grid-gutter/2;
-  color: var(--garibaldi-color-primary, $standard-color-primary);
+  padding: $saltash-grid-gutter/2;
+  color: var(--saltash-color-primary, $standard-color-primary);
   pointer-events: all;
   background-color: var(--white, $white);
-  border: 1px solid var(--garibaldi-color-primary, $standard-color-primary);
+  border: 1px solid var(--saltash-color-primary, $standard-color-primary);
   border-radius: $border-radius;
   opacity: 0;
   transition: opacity 200ms ease-in;
@@ -28,7 +28,7 @@
   &:hover,
   &:focus {
     color: var(--white, $white);
-    background-color: var(--garibaldi-color-hover);
+    background-color: var(--saltash-color-hover);
     border-color: var(--white, $white);
   }
 }

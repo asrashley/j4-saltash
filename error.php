@@ -1,7 +1,7 @@
 <?php
 /**
  * @package     Joomla.Site
- * @subpackage  Templates.garibaldi
+ * @subpackage  Templates.saltash
  *
  * @copyright   (C) 2017 Open Source Matters, Inc. <https://www.joomla.org>
  * @license     GNU General Public License version 2 or later; see LICENSE.txt
@@ -52,10 +52,10 @@ if ($paramsFontScheme)
 
         if (preg_match_all('/family=([^?:]*):/i', $paramsFontScheme, $matches) > 0)
         {
-            $fontStyles = '--garibaldi-font-family-body: "' . str_replace('+', ' ', $matches[1][0]) . '", sans-serif;
-            --garibaldi-font-family-headings: "' . str_replace('+', ' ', isset($matches[1][1]) ? $matches[1][1] : $matches[1][0]) . '", sans-serif;
-            --garibaldi-font-weight-normal: 400;
-            --garibaldi-font-weight-headings: 700;';
+            $fontStyles = '--saltash-font-family-body: "' . str_replace('+', ' ', $matches[1][0]) . '", sans-serif;
+            --saltash-font-family-headings: "' . str_replace('+', ' ', isset($matches[1][1]) ? $matches[1][1] : $matches[1][0]) . '", sans-serif;
+            --saltash-font-weight-normal: 400;
+            --saltash-font-weight-headings: 700;';
         }
     }
     else
@@ -66,7 +66,7 @@ if ($paramsFontScheme)
 }
 
 // Enable assets
-$wa->usePreset('template.garibaldi.' . ($this->direction === 'rtl' ? 'rtl' : 'ltr'))
+$wa->usePreset('template.saltash.' . ($this->direction === 'rtl' ? 'rtl' : 'ltr'))
     ->useStyle('template.active.language')
     ->useStyle('template.user')
     ->useScript('template.user')
@@ -81,7 +81,7 @@ $wa->usePreset('template.garibaldi.' . ($this->direction === 'rtl' ? 'rtl' : 'lt
     }");
 
 // Override 'template.active' asset to set correct ltr/rtl dependency
-$wa->registerStyle('template.active', '', [], [], ['template.garibaldi.' . ($this->direction === 'rtl' ? 'rtl' : 'ltr')]);
+$wa->registerStyle('template.active', '', [], [], ['template.saltash.' . ($this->direction === 'rtl' ? 'rtl' : 'ltr')]);
 
 // Browsers support SVG favicons
 $this->addHeadLink(HTMLHelper::_('image', 'joomla-favicon.svg', '', [], true, 1), 'icon', 'rel', ['type' => 'image/svg+xml']);
